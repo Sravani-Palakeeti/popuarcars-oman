@@ -1,0 +1,47 @@
+.emi {
+
+    .card {
+        margin: 32px 0 0 30px;
+        box-shadow: 1px 3px 4px 0 #adadad;
+        padding-left: 30px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+
+    h4 {
+        color: #6c7481;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    button {
+        width: 165px;
+        height: 40px;
+        background-color: #16181D;
+        color: #ffffff;
+        font-weight: 600;
+        outline: none;
+    }
+
+    button:hover {
+        background-color: #E70001;
+        border: none;
+        outline: none;
+    }
+
+    .center p {
+        font-size: 14px;
+    }
+
+    a {
+        color: #6E757F;
+        font-size: 22px;
+    }
+
+}

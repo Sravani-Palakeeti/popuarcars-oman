@@ -1,0 +1,33 @@
+<section class="emi" id="emi">
+    <!-- start emi calculator -->
+    <div class="card">
+        <div class="bg w-100">
+            <h4 class="mt-3">EMI Calculator</h4>
+        </div>
+        <div ng-app="myApp" class="mt-2" ng-controller="emiCtrl" ng-init="loanAmt=1000000; interest=10; tenure=120">
+            <form>
+                <p>Price of the car <br> <input type="text" ng-model="loanAmount"></p>
+                <p>Down Payment <br><input type="text" ng-model="downpmt"></p>
+                <p>Loan Amount <br><input type="text" ng-model="loanAmount"></p>
+                <p>Enter Interest Rate(%) <br>  <input type="text" ng-model="interest"></p>
+                <p>No.of Installments <br> <input type="text" ng-model="tenure"></p>
+                <p>Monthly Payment <br> <input type="text" ng-model="emi" placeholder="{{ emi }}"></p> <br>
+                <button type="submit" ng-model="submit" (click)="cal()">Calculate</button>
+            </form>
+        </div>
+    </div>
+    <!-- end emi calculator -->
+
+    <!-- start center -->
+    <div class="card center">
+        <div class="bg">
+            <h4 class="mt-4">Support Center</h4>
+        </div>
+        <p class="mt-4">Do you have any Queries on <br>
+            Pre-owned cars ? Feel free to call <br> us at</p>
+        <a>+968 97101234</a>
+        <p class="mt-4 mb-4 pb-4">(09:00 am - 2:00pm)<br> (08:00 pm -  11:30 pm)</p>
+    </div>
+    <!-- end center -->
+
+</section>

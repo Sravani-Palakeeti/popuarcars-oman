@@ -1,0 +1,51 @@
+<section class="inspection" id="inspection">
+    <div class="container-fulid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>inspection</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">pre-owned car guide</li>
+                <li class="active">inspection</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- image section start -->
+        <div class="row d-flex">
+            <div class="col-lg-3">
+                <app-emi-calculator></app-emi-calculator>
+            </div>
+            <div class="col-lg-9">
+             <div class="container">
+                <img src="{{img}}" alt="" srcset="">
+                <span>{{pageheading}}</span>
+                <h4>
+                    <li>{{list1}}</li>
+                </h4>
+                <p>{{list1text}}</p>
+                <div *ngFor="let list of list1loop">
+                    <h4>{{list.list1heading}}</h4>
+                    <p>{{list.list1headingtext}}</p>
+                </div>
+                <h4>
+                    <li>{{list2}}</li>
+                </h4>
+                <div *ngFor="let lists of list2loop">
+                    <h4>{{lists.list2heading}}</h4>
+                    <p>{{lists.list2headingtext}}</p>
+                </div>
+                <h4>
+                    <li>{{list3}}</li>
+                </h4>
+                <div *ngFor="let listes of list3loop">
+                    <h4>{{listes.list3heading}}</h4>
+                    <p>{{listes.list3headingtext}}</p>
+                </div>
+             </div>
+            </div>
+        </div>
+        <!-- image section end -->
+        <div class="head"></div>
+    </div>
+</section>

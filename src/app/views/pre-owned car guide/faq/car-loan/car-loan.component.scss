@@ -1,0 +1,39 @@
+.car-loan{
+    overflow-x: hidden;
+    li{
+        font-size: 16px;
+        line-height: 25px;
+        justify-content: end;
+        padding-right: 20px;
+        color: rgb(82, 80, 80);
+    }
+    p{
+        font-size: 16px;
+        line-height: 25px;
+        justify-content: end;
+        padding-right: 20px;
+        color: rgb(74, 73, 73);
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    .card{
+        margin-top: 10px;
+        width: 100%;
+      
+    }
+
+   button{
+        font-size: 15px ;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        // color: #171717;
+        color: #1B5B99;
+
+        @media (max-width:768px){
+           display: inline-block;
+        }
+       
+    }
+}

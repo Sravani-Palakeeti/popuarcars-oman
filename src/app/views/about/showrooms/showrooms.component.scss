@@ -1,0 +1,34 @@
+.showroom .card {
+    // margin: 10px 10px 40px 0;
+    box-shadow: 1px 3px 4px 0 #adadad33;
+
+    img {
+        width: 100%;
+        font: var(--fa-font-solid);
+        content: '\f007';
+    }
+
+    p {
+        margin-left: 10px;
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
+        color: #5c5c5c;
+    }
+
+    .text-block {
+        position: absolute;
+        bottom: 82px;
+        margin: 0;
+        background-color: #E70001;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 30px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 5px;
+        text-transform: uppercase;
+    }
+
+}

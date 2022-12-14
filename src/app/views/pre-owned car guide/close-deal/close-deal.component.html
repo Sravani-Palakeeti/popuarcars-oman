@@ -1,0 +1,39 @@
+<section class="deal">
+    <div class="container-fluid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>close the deal</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">pre-owned car guide</li>
+                <li class="active">close the deal</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- image section start -->
+          <div class="row d-flex">
+            <div class="col-lg-3">
+                 <app-emi-calculator></app-emi-calculator>
+            </div>
+            <div class="col-lg-9">
+                <div class="container">
+                    <img src="{{img}}" alt="" srcset="">
+                    <span>{{pageheading}}</span>
+                    <div *ngFor="let list of heading">
+                        <h4>{{list.heading}}</h4>
+                        <p>{{list.headingtext}}</p>
+                    </div>
+                    <h4><li>{{sideheading}}</li></h4>
+                    <div *ngFor="let data of headingcontent">
+                        <h4>{{data.headline}}</h4>
+                        <p>{{data.text}}</p>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+        <!-- image section end -->
+        <div class="head"></div>
+    </div>
+</section>

@@ -1,0 +1,242 @@
+<section class="sell" id="sell">
+    <div class="contianer-fluid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>sell car</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">buy / sell cars</li>
+                <li class="active">sell car</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+        <div class="row d-flex">
+            <div class="col-lg-3">
+                <app-emi-calculator></app-emi-calculator>
+            </div>
+            <div class="col-lg-9">
+                <div class="container">
+                    <form action="">
+                        <h2>vehicle information</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Vehicle Make</mat-label>
+                                    <input type="text" name="make" id="" matInput placeholder="vehicle make"
+                                        class="px-2" [formControl]="make" required>
+                                    <mat-error *ngIf="make.invalid">{{getErrorMessageMake()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Vehicle Model</mat-label>
+                                    <input type="text" name="model" id="" matInput placeholder="vehicle model"
+                                        class="px-2" [formControl]="model" required>
+                                    <mat-error *ngIf="model.invalid">{{getErrorMessageModel()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Body Type</mat-label>
+                                    <mat-select [formControl]="bodyTypeControl" required>
+                                        <mat-option>Select Body Type</mat-option>
+                                        <mat-option *ngFor="let body of bodyType" [value]="bodyType">
+                                            {{body.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose body type
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Model year</mat-label>
+                                    <mat-select [formControl]="transmissionControl" required>
+                                        <mat-option>Select Model Year</mat-option>
+                                        <mat-option *ngFor="let transmission of transmission" [value]="transmission">
+                                            {{transmission.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose transmission
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Fuel Type</mat-label>
+                                    <mat-select [formControl]="modelYearControl" required>
+                                        <mat-option>Select Fuel Type</mat-option>
+                                        <mat-option *ngFor="let fuel of fuelType" [value]="fuel">
+                                            {{fuel.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose fuel type
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Body Condition</mat-label>
+                                    <mat-select [formControl]="modelYearControl" required>
+                                        <mat-option>Select Body Condition</mat-option>
+                                        <mat-option *ngFor="let bodycondition of bodyCondition" [value]="bodycondition">
+                                            {{bodycondition.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose body condition
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Mechanical Condition</mat-label>
+                                    <mat-select [formControl]="modelYearControl" required>
+                                        <mat-option>Select Mechanical Condition</mat-option>
+                                        <mat-option *ngFor="let mechanicalcondition of mechanicalCondition"
+                                            [value]="mechanicalcondition">
+                                            {{mechanicalcondition.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose cechanical
+                                        condition</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Kilometer</mat-label>
+                                    <input type="text" name="km" id="" matInput placeholder="kilometer driven"
+                                        class="px-2" [formControl]="km" required>
+                                    <mat-error *ngIf="km.invalid">{{getErrorMessageKm()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Body Color</mat-label>
+                                    <input type="text" name="color" id="" matInput placeholder="vehicle color"
+                                        class="px-2" [formControl]="color" required>
+                                    <mat-error *ngIf="color.invalid">{{getErrorMessageColor()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Transmission</mat-label>
+                                    <mat-select [formControl]="modelYearControl" required>
+                                        <mat-option>Select Transmission</mat-option>
+                                        <mat-option *ngFor="let transmission of transmission" [value]="transmission">
+                                            {{transmission.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose model year
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label> Expected Price(OMR)</mat-label>
+                                    <input matInput type="email" placeholder="expected price (OMR)" class="px-2"
+                                        [formControl]="email" required>
+                                    <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6 mt-4">
+                                <!-- <mat-form-field appearance="outline">
+                                    <mat-label> Upload Images</mat-label>
+                                    <input matInput [(ngModel)]="fileAttr" readonly name="name" />
+                                    <input matInput type="" placeholder="choose files" class="px-2" required>
+                                    <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error> 
+                                </mat-form-field> -->
+                                <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)"
+                                    name="uploadFile" multiple="multiple" accept="image/*" />
+                            </div>
+
+                        </div>
+                        <mat-form-field appearance="outline" style="width: 870px;font-size: 20px;">
+                            <mat-label> Remarks</mat-label>
+                            <input type="text" matInput placeholder="remarks" class="px-2" required>
+                        </mat-form-field>
+                        <h2>contact information</h2>
+                        <mat-form-field appearance="outline" style="width: 870px; ">
+                            <mat-label> Your Name</mat-label>
+                            <input type="text" matInput placeholder="jhon" class="px-2" [formControl]="name" required>
+                            <mat-error *ngIf="name.invalid">{{getErrorMessageName()}}</mat-error>
+                        </mat-form-field>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label> Your Email</mat-label>
+                                    <input matInput type="email" placeholder="pat@example.com" class="px-2"
+                                        [formControl]="email" required>
+                                    <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label class="phone"> Your Mobile number</mat-label>
+                                    <input type="tel" matInput id="txtPhone" placeholder="Mobile Number" name="phone"
+                                        [formControl]="phone" required>
+                                    <mat-error *ngIf="phone.invalid">{{getErrorMessagePhone()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>City</mat-label>
+                                    <input type="text" name="city" matInput placeholder="city" id=""
+                                        [formControl]="city" required>
+                                    <mat-error *ngIf="phone.invalid">{{getErrorMessageCity()}}</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Country</mat-label>
+                                    <mat-select [formControl]="countryControl" required>
+                                        <mat-option>Select Country</mat-option>
+                                        <mat-option *ngFor="let country of countryList" [value]="country">
+                                            {{country.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="countryControl.hasError('required')">Please choose the country
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <br>
+                        </div>
+                        <h2>best time to contact you</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>From</mat-label>
+                                    <mat-select [formControl]="fromTimeControl" required>
+                                        <mat-option>Select Time</mat-option>
+                                        <mat-option *ngFor="let time of fromTime" [value]="time">
+                                            {{time.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="fromTimeControl.hasError('required')">Please choose the time
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>To</mat-label>
+                                    <mat-select [formControl]="toTimeControl" required>
+                                        <mat-option>Select Time</mat-option>
+                                        <mat-option *ngFor="let time of toTime" [value]="time">
+                                            {{time.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="toTimeControl.hasError('required')">Please choose the time
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button mat-flat-button color="primary">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

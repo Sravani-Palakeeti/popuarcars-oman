@@ -1,0 +1,90 @@
+.sell {
+    overflow-x: hidden;
+
+    h2 {
+        text-align: center;
+        font-weight: bolder;
+        // color: #14181C;
+        color: #3d3d3d;
+        text-transform: uppercase;
+        margin: 2rem 0 20px 0;
+    }
+
+
+    button {
+        background-color: #000101;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        width: 310px;
+        height: 45px;
+        border: none;
+        outline: none;
+        margin: 20px auto;
+        justify-content: center;
+        @media (max-width : 776px) {
+            width: 94%;
+        }
+    }
+
+    button:disabled {
+        background-color: rgb(183, 180, 180);
+        color: #515050;
+        border: none;
+    }
+
+    .mat-form-field+.mat-form-field {
+        margin-left: 8px;
+    }
+
+    ::ng-deep .mat-form-field-underline {
+        display: none;
+    }
+
+    ::ng-deep .mat-form-field {
+        font-size: 12px;
+        margin-top: 10px;
+        width: 400px;
+
+        @media (max-width : 776px) {
+            width: 94% !important;
+        }
+    }
+
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: #a1a1a1 !important;
+        // opacity: 1!important;
+    }
+
+    mat-form-field mat-label {
+        font-size: 16px !important;
+        font-family: 'Lato', sans-serif;
+        vertical-align: middle !important;
+    }
+
+    .text {
+        width: 600px !important;
+
+        @media (max-width : 776px) {
+            width: 94% !important;
+        }
+    }
+
+    ::placeholder {
+        font-size: 15px !important;
+    }
+
+    .mat-error {
+        font-size: 14px;
+    }
+
+
+    .phone::placeholder {
+        padding-left: 2px;
+    }
+
+    mat-select,
+    mat-option {
+        text-transform: uppercase !important;
+    }
+}

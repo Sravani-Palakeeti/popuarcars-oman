@@ -1,0 +1,135 @@
+.car-info{
+    h2{
+        text-transform: uppercase;
+        color: #363636;
+        font-size: 18px;
+        justify-content: left !important;
+        // text-align: initial;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif !important;
+    }
+
+    p{
+        margin-left: 30px;
+    }
+    
+    .currency{
+        text-transform: uppercase;
+    }
+
+    span{
+        font-size: 40px;
+        // color: #E73853;
+    }
+
+    h3{
+        text-transform: uppercase;
+        color: #363636;
+        font-size: 25px;
+        text-align: initial;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif !important;
+    }
+
+    h4{
+        text-align: left;
+    }
+
+    form{
+      
+        margin-left: 30px;
+
+        .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+            margin-left: 16px;
+          }
+          ::ng-deep .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+            background-color: #E73853 !important;
+          }
+          
+          ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+            background-color: #E73853!important;   /*inner circle color change*/
+          }
+          
+          ::ng-deep.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+           border-color:#E73853!important; /*outer ring color change*/
+          }
+        
+        button {
+            background-color: #000101;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            width: 310px;
+            height: 45px;
+            border: none;
+            outline: none;
+            margin: 20px auto;
+            margin-bottom: 70px;
+            justify-content: center;
+            @media (max-width : 776px) {
+                width: 94%;
+            }
+        }
+        
+        .mat-form-field+.mat-form-field {
+            margin-left: 8px;
+        }
+        
+        ::ng-deep .mat-form-field-underline {
+            display: none;
+        }
+        
+        ::ng-deep .mat-form-field {
+            font-size: 12px;
+            margin-top: 10px;
+            width: 400px;
+        
+            @media (max-width : 776px) {
+                width: 94% !important;
+            }
+        }
+        
+        ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+            color: #a1a1a1 !important;
+        }
+        
+        mat-form-field mat-label {
+            font-size: 16px !important;
+            font-family: 'Lato', sans-serif;
+            vertical-align: middle !important;
+            text-transform: capitalize;
+        }
+        
+        .text textarea {
+            // width: 650px !important;
+            height: 150px;
+        
+        }
+        
+        .text {
+            width: 860px !important;
+        
+            @media (max-width : 776px) {
+                width: 94% !important;
+            }
+        }
+        
+        ::placeholder {
+            font-size: 15px !important;
+            text-transform: capitalize;
+        }
+        
+        .mat-error {
+            font-size: 14px;
+        }
+        
+        
+        .phone::placeholder {
+            padding-left: 2px;
+        }
+    }
+}

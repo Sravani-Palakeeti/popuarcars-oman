@@ -1,0 +1,142 @@
+ <div class="row d-flex">
+                            <mat-card> 
+                                <img mat-card-image src="../../../assets/images/home-select car/sedan/altima.jpg" alt="">
+                                <mat-card-content >
+                                    <h4>nissan altima</h4>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        Under 102570 Kms </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 doors </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        color white</p>
+                                        <div class="row pt-4">
+                                            <div class="col-lg-6 price">
+                                                <p >omr <span>3250</span></p>
+                                            </div>
+                                           <div class="col-lg-6">
+                                                <button mat-button>buy it</button>
+                                           </div>
+                                        </div>
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card> 
+                                <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-2.jpg" alt="">
+                                <mat-card-content >
+                                    <h4>nissan sunny</h4>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        Under 160251 Kms </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        manufacturing year 2017</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 doors </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        color white</p>
+                                        <div class="row pt-4">
+                                            <div class="col-lg-6 price">
+                                                <p >omr <span>3250</span></p>
+                                            </div>
+                                           <div class="col-lg-6">
+                                                <button mat-button>buy it</button>
+                                           </div>
+                                        </div>
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card> 
+                                <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-2.jpg" alt="">
+                                <mat-card-content >
+                                    <h4>nissan sunny</h4>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        Under  157902 Kms </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        5 doors </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        color white</p>
+                                        <div class="row pt-4">
+                                            <div class="col-lg-6 price">
+                                                <p >omr <span>3250</span></p>
+                                            </div>
+                                           <div class="col-lg-6">
+                                                <button mat-button>buy it</button>
+                                           </div>
+                                        </div>
+                                </mat-card-content>  
+                            </mat-card>
+                            <mat-card> 
+                                <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-3.jpg" alt="">
+                                <mat-card-content >
+                                    <h4>nissan sunny</h4>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        Under 141753 Kms </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 doors </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        color white</p>
+                                        <div class="row pt-4">
+                                            <div class="col-lg-6 price">
+                                                <p >omr <span>3250</span></p>
+                                            </div>
+                                           <div class="col-lg-6">
+                                                <button mat-button>buy it</button>
+                                           </div>
+                                        </div>
+                                </mat-card-content>
+                            </mat-card>
+                            <mat-card> 
+                                <img mat-card-image src="../../../assets/images/home-select car/sedan/sentra.jpeg" alt="">
+                                <mat-card-content >
+                                    <h4>nissan sentra</h4>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        Under 95695  Kms </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        manufacturing year 2017</p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        4 doors </p>
+                                    <p> <img src="../../../assets/images/home-select car/check.png" alt=" " srcset="">
+                                        color white</p>
+                                        <div class="row pt-4">
+                                            <div class="col-lg-6 price">
+                                                <p >omr <span>3250</span></p>
+                                            </div>
+                                           <div class="col-lg-6">
+                                                <button mat-button>buy it</button>
+                                           </div>
+                                        </div>
+                                </mat-card-content>
+                            </mat-card>
+                           </div>

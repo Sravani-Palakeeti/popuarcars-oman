@@ -1,0 +1,119 @@
+<section class="contact" id="contact">
+    <div class="container-fluid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>contact us</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">contact us</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- form area start -->
+        <div class="row d-block">
+            <div class="col-lg-7 ml-4">
+                <div class="row">
+                    <h4 class="ml-3">{{formhead}}</h4>
+                    <div class="hl hl1"></div>
+                </div>
+                <form action="">
+                    <mat-form-field appearance="outline">
+                        <mat-label> Name </mat-label>
+                        <input type="text" matInput placeholder="Jhon" name="name" [formControl]="name" required>
+                        <mat-error *ngIf="name.invalid">{{getErrorMessageName()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label class="phone"> Mobile </mat-label>
+                        <input type="tel" matInput id="txtPhone" placeholder="Mobile Number" name="phone"
+                            [formControl]="phone" required>
+                        <mat-error *ngIf="phone.invalid">{{getErrorMessagePhone()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label> Email </mat-label>
+                        <input type="email" matInput placeholder="jhon@gmail.com" name="email" [formControl]="email"
+                            required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Subject</mat-label>
+                        <input type="text" name="subject" matInput placeholder="subject" id="" [formControl]="subject"
+                            required>
+                        <mat-error *ngIf="phone.invalid">{{getErrorMessageSubject()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline" class="text">
+                        <mat-label>Message</mat-label>
+                        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+                            placeholder="Type your feedback/message" cdkAutosizeMaxRows="7" [formControl]="textarea"
+                            required>
+                        </textarea>
+                        <mat-error *ngIf="phone.invalid">{{getErrorMessageTextArea()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <button class="btn " type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="row ml-3">
+                    <h4 class="ml-2">{{contacthead}}</h4>
+                    <div class="hl"></div>
+                    <div class="container">
+                        <div class="row">
+                            <button class="bg"><i class="fa-solid fa-house-chimney"></i></button>
+                            <span><strong>Address:</strong>
+                                <p> Popular Pre-owned Cars, <br>
+                                    P. O. Box 156, Ruwi – 112 <br>
+                                    Muscat, Sultanate of Oman.</p>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <button class="bg"><i class="fa-regular fa-envelope"></i></button>
+                            <span><strong>E-Mail:</strong>
+                                <p> info@popularcarsoman.com</p>
+                            </span>
+                        </div>
+                        <div class="row mt-4">
+                            <button class="bg"><i class="fa-solid fa-phone"></i></button>
+                            <span><strong>Phone:</strong>
+                                <p> +968 97101234 <br>
+                                    +968 24661738</p>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <button class="bg"><i class="fa-solid fa-fax"></i></button>
+                            <span><strong>Fax:</strong>
+                                <p> 24564822</p>
+                            </span>
+                        </div>
+                        <div class="row mt-4">
+                            <button class="bg"><i class="fa-regular fa-clock"></i> </button>
+                            <span><strong>Working Hours:</strong>
+                                <p> Sunday to Saturday <br>
+                                    08:30 am to 01:30 pm <br>
+                                    03:30 pm to 07:00 pm <br>
+                                    <b>Friday Closed</b></p>
+                            </span> 
+                        </div>
+                        <div class="row mt-4 pt-2 pl-1">
+                            <p>We have showrooms in Muscat, Sohar, Sur, Salalah, <br> Ibri, Ibra, Nizwa, Barka, Jalan Bani Bu Ali, Seeb and Sinaw.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- form area end -->
+
+        <!-- map start -->
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8596058542967!2d58.492345799999995!3d23.609367499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f9f362f07c8b%3A0xf407a5faed6be928!2sPopular%20Pre-Owned%20Cars!5e0!3m2!1sen!2sin!4v1669696470759!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-100" height="450px" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1275737188657!2d58.53380661586857!3d23.5997572585809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f9cc1d4847c3%3A0xc37b654b0fb43b15!2s112%20Ruwi%20St%2C%20Muscat%20112%2C%20Oman!5e0!3m2!1sen!2sin!4v1668417378917!5m2!1sen!2sin" class="w-100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          </div>
+        <!-- map ends -->
+
+    </div>
+</section>

@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1,h2.h3,h4,h5,h6,span{
+    // font-family: Futura Md BT, "Trebuchet MS", Arial, sans-serif !important
+    font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif !important;
+}
+p,button,a{
+    font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif !important;
+}
+::selection {
+    background: #E73853;
+  }
+button:hover, .btn:hover{
+    background-color: #E73853 !important;
+}
+
+/**********************
+breadcrumbs
+*********************/
+.breadcrumbs{
+    // background-color: #F4F6F9;
+    background-color: #efeeee;
+    width: 100% !important;
+    text-align: center;
+
+    h1{
+        color: #9EA6B1;
+        // font-weight: bolder;
+        text-transform: uppercase;
+        padding: 15px 0 0 38px;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        position: relative;
+        // padding: 5px 0 0 13px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        // font-weight: 700;
+        line-height: 14px;
+        text-transform: uppercase;
+        background-color: transparent;
+        justify-content: center;
+    }
+    
+    .breadcrumb a {
+        color: #9ea6b1;
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    .breadcrumb a:hover {
+        border-bottom: solid 1px #14181c
+    }
+    
+    .breadcrumb li {
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        text-align: center;
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .breadcrumb > li + li:before {
+        content: '\f105 ';
+        font-size: 17px;
+        font-family: 'FontAwesome';
+        margin-right: 6px;
+        position: relative;
+        top: 2px;
+    }
+    
+    .breadcrumb > .active {
+        color: #a5abb7;
+        text-align: center;
+    }
+    
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: Futura Md BT, "Trebuchet MS", Arial, sans-serif;
+ }
+

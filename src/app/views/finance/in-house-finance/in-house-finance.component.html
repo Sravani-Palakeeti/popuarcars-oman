@@ -1,0 +1,48 @@
+<section class="in-house">
+    <div class="container-fluid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>in-house finance</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">finance</li>
+                <li class="active">in-house finance</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- image section start -->
+          <div class="row">
+            <div class="col-lg-3">
+                 <app-emi-calculator></app-emi-calculator>
+            </div>
+            <div class="col-lg-9">
+                <img src="{{img}}" alt="" srcset="">
+                <span>{{pageheading}}</span>
+                <p class="mt-4">{{content}}</p>
+                <p><li *ngFor="let data of list">{{data.lists}}</li></p>
+                <img src="{{tbl1}}" alt="" srcset="">
+                <h4>{{tbl1heading}}</h4>
+                <p><li>{{tbl1text}}</li></p>
+                <h4>{{tbl2heading}}</h4>
+                <img src="{{tbl2}}" alt="" srcset="">
+                <h4>{{tbl2heading2}}</h4>
+                <p class="pt-3"> <li *ngFor="let text of requirements">{{text.data}}</li></p>
+                <h4>{{tbl2heading3}}</h4>
+                <p>{{individualtext}}</p>
+                <p class="pt-3"><li *ngFor="let data of individualRequirements">{{data.text}}</li></p>
+                <h4>{{tbl2heading4}}</h4>
+                <p>{{individualtext}}</p>
+                <p class="pt-3"><li *ngFor="let data of commercialList">{{data.data}}</li></p>
+                <h4>{{tbl2heading5}}</h4>
+                <p class="pt-3"><li *ngFor="let data of repaymentlist">{{data.data}}</li></p>
+                <h4>{{tbl2heading6}}</h4>
+                <p>{{applicationtext}}</p>
+                <p class="pt-3"><li *ngFor="let data of process">{{data.data}}</li></p>
+            </div>
+            
+          </div>
+        <!-- imgage section end -->
+        <div class="head"></div>
+    </div>
+</section>

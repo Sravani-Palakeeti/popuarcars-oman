@@ -1,0 +1,99 @@
+
+/*************************
+footer contact section
+***************************/
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #000101;
+    color: #ffffff;
+
+    .text-center{
+       padding-top: 3%;
+
+       p{
+        font-size: 25px;
+        text-transform: uppercase;
+       }
+       button{
+        background-color: #F63E28;
+        color: #ffffff;
+        text-transform: uppercase;
+        bottom: 10px;
+        font-weight: 600;
+        outline: none !important;
+       }
+       button:hover{
+        background-color: #14191D;
+        font-weight: 500;
+        outline: none;
+       }
+
+    }
+    
+}
+
+/*************************
+footer credit section
+***************************/
+.credits{
+    height: auto;
+    width: 100%;
+    background-color: #000101;
+    color: #ffffff;
+
+    h6{
+        font-size: 16px;
+       span{
+        font-size: 14px;
+
+        @media (max-width:978px){
+            font-size: 16px;
+           }
+       }
+       @media (max-width:978px){
+        font-size: 18px;
+       }
+    }
+
+    img{
+      margin-top: 12px;
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+
+      @media (max-width: 1079px) {
+       width: 15px;
+       height: 15px;
+      }
+      @media (max-width:978px){
+        width: 20px;
+        height: 20px;
+       }
+      
+    }
+p{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    @media (max-width:1079px){
+        font-size: 13px;
+    }
+    @media (max-width:978px){
+       padding-top: 10px;
+       }
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    padding : 0 10px 0 0 ;
+}
+
+@media (max-width:992px){
+    .images{
+       justify-content: center;
+    }
+   }
+
+}

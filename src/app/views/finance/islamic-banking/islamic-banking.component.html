@@ -1,0 +1,39 @@
+<section class="finance" id="bank">
+    <div class="container-fluid">
+        <!-- breadcrumbs start -->
+        <div class="breadcrumbs">
+            <h1>islamic banking</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">finance</li>
+                <li class="active">islamic banking</li>
+            </ul>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- banks data start -->
+        
+        <div class="row">
+            <div class="col-lg-3">
+                <app-emi-calculator></app-emi-calculator>
+            </div>
+            <div class="col-lg-9">
+              <div class="container">
+                <h2 class="">{{pageheading}}</h2>
+                <div class="row">
+                    <div class="col-lg-4" *ngFor="let data of banks">
+                        <div class="card">
+                            <a href="{{data.link}}" target="_blank"><img class="card-img-top" src="{{data.img}}" alt="Card image cap"></a>
+                            <hr>
+                            <div class="card-body">
+                                <a href="{{data.link}}" target="_blank"><span>{{data.name}}</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- banks data end -->
+    </div>
+</section>

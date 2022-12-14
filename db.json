@@ -1,0 +1,150 @@
+{
+  "cars": [
+    {
+      "id":1,
+      "name": "NISSAN SUNNY 2017",
+      "image": "../assets/images/buy-car/images/sunny-2.jpg",
+      "currency": "omr",
+      "price": 2950,
+      "year": 2017,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 160251
+    },
+    {
+      "id":2,
+      "name": "RENAULT DUSTER 2017",
+      "image": "../assets/images/buy-car/images/renault duster.jpg",
+      "currency": "omr",
+      "price": 3000,
+      "year": 2017,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 88551
+    },
+    {
+      "id":3,
+      "name": "NISSAN SUNNY 2018",
+      "image": "../assets/images/buy-car/images/sunny-3.jpg",
+      "currency": "omr",
+      "price": 3250,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 161515
+    },
+    {
+      "id":4,
+      "name": "NISSAN SENTRA 2017",
+      "image": "../assets/images/buy-car/images/sentra.jpg",
+      "currency": "omr",
+      "price": 3500,
+      "year": 2017,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 95695
+    },
+    {
+      "id":5,
+      "name": "NISSAN SUNNY 2018",
+      "image": "../assets/images/buy-car/images/sunny-2.jpg",
+      "currency": "omr",
+      "price": 3250,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 141713
+    },
+    {
+      "id":6,
+      "name": "FOTON TUNLAND P/UP 2022",
+      "image": "../assets/images/buy-car/images/foton-tunland.jpg",
+      "currency": "omr",
+      "price": 5500,
+      "year": 2022,
+      "fuel": "petrol",
+      "transmission": "manual",
+      "km": 1109
+    },
+    {
+      "id":7,
+      "name": "NISSAN SUNNY 2018",
+      "image": "../assets/images/buy-car/images/sunny-2.jpg",
+      "currency": "omr",
+      "price": 3250,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 157902
+    },
+    {
+      "id":8,
+      "name": "NISSAN ALTIMA 2018",
+      "image": "../assets/images/buy-car/images/altima.jpg",
+      "currency": "omr",
+      "price": 6500,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 102571
+    },
+    {
+      "id":9,
+      "name": "NISSAN X-TRAIL 2018",
+      "image": "../assets/images/buy-car/images/x-trail.jpg",
+      "currency": "omr",
+      "price": 7000,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 140895
+    },
+    {
+      "id":10,
+      "name": "NISSAN KICKS 2018",
+      "image": "../assets/images/buy-car/images/kicks.jpg",
+      "currency": "omr",
+      "price": 7000,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 73588
+    },
+    {
+      "id":11,
+      "name": "CHANGAN CS 95 2022",
+      "image": "../assets/images/buy-car/images/changan cs.jpg",
+      "currency": "omr",
+      "price": 10500,
+      "year": 2022,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 10891
+    },
+    {
+      "id":12,
+      "name": "NISSAN PATROL 2015",
+      "image": "../assets/images/buy-car/images/nissan-patrol-1.jpg",
+      "currency": "omr",
+      "price": 16500,
+      "year": 2015,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 113817,
+      "btn" : "buy it",
+      "add" : "add to compare"
+    },
+    {
+      "id":13,
+      "name": "NISSAN PATROL 2018",
+      "image": "../assets/images/buy-car/images/nissan-patrol-2.jpg",
+      "currency": "omr",
+      "price": 20000,
+      "year": 2018,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "km": 141650
+    }
+  ]
+  
+}
