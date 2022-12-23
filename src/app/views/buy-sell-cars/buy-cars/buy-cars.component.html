@@ -21,9 +21,9 @@
                     <h3>make</h3>
                     <div class="check">
                         <mat-checkbox>changan</mat-checkbox> <br>
-                    <mat-checkbox>foton</mat-checkbox> <br>
-                    <mat-checkbox>nissan</mat-checkbox> <br>
-                    <mat-checkbox>renault</mat-checkbox>
+                        <mat-checkbox>foton</mat-checkbox> <br>
+                        <mat-checkbox>nissan</mat-checkbox> <br>
+                        <mat-checkbox>renault</mat-checkbox>
                     </div>
                     <h3>kilometer</h3>
                     <div class="custom-slider">
@@ -34,23 +34,23 @@
                         <ngx-slider [(value)]="minValue2" [(highValue)]="maxValue2" [options]="options2"></ngx-slider>
                     </div>
                     <h3>fuel type</h3>
-                   <div class="check">
-                    <mat-checkbox>diesel</mat-checkbox> <br>
-                    <mat-checkbox>petrol</mat-checkbox>
-                   </div>
+                    <div class="check">
+                        <mat-checkbox>diesel</mat-checkbox> <br>
+                        <mat-checkbox>petrol</mat-checkbox>
+                    </div>
                     <h3>body type</h3>
                     <div class="check">
                         <mat-checkbox>commercial</mat-checkbox> <br>
-                    <mat-checkbox>crossover</mat-checkbox> <br>
-                    <mat-checkbox>sedan</mat-checkbox> <br>
-                    <mat-checkbox>suv</mat-checkbox>
+                        <mat-checkbox>crossover</mat-checkbox> <br>
+                        <mat-checkbox>sedan</mat-checkbox> <br>
+                        <mat-checkbox>suv</mat-checkbox>
                     </div>
                     <h3>transmission</h3>
-                  <div class="check">
-                    <mat-checkbox>electrical</mat-checkbox> <br>
-                    <mat-checkbox>automatic</mat-checkbox> <br>
-                    <mat-checkbox>manual</mat-checkbox>
-                  </div>
+                    <div class="check">
+                        <mat-checkbox>electrical</mat-checkbox> <br>
+                        <mat-checkbox>automatic</mat-checkbox> <br>
+                        <mat-checkbox>manual</mat-checkbox>
+                    </div>
                     <mat-card-actions>
                         <button matbutton>find car</button>
                     </mat-card-actions>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-lg-9 cars ">
                 <div class="col-lg-12">
-                    <p  *ngFor="let post of POSTS | paginate : {
+                    <p *ngFor="let post of POSTS | paginate : {
                         itemsPerPage: tableSize,
                         currentPage: page,
                         totalItems: count 
@@ -68,13 +68,23 @@
                         <span class="">
                             <div class="row buy-car">
                                 <div class="col-lg-5 mt-4 pt-4">
-                                    <img class="img" src="{{post.image}}" alt="" srcset="" height="208px" width="390px">
+                                    <!-- <img id="myImg" src="{{post.image}}" alt="" style="width:100%;max-width:600px"> -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+                                    <img class="img" id="myImg" src="{{post.image}}" alt="" srcset="" height="208px" width="390px">
                                 </div>
+                                <!-- <div class="col-lg-5 mt-4 pt-4">
+                                    <a href=""> <img class="img" src="{{post.image}}" (click)="share()" alt="" srcset=""
+                                            height="208px" width="390px"></a>
+                                </div> -->
                                 <div class="col-lg-7 pt-3">
                                     <!-- <h2>{{post.name}}</h2>
                                         <span class="row mt-2"><span class="pt-4 mt-2 price">{{post.currency}}</span>
                                             <h4>{{post.price}}</h4>
-                                        </span> -->
+                                        </span> --> 
                                     <div class="row">
                                         <h2>{{post.name}}</h2>
                                         <span class="row mt-2 "><span class="pt-4 mt-2 price">{{post.currency}}</span>
@@ -82,7 +92,10 @@
                                         </span>
                                     </div>
                                     <mat-divider></mat-divider>
-                                    <div class="compare mt-4 ">
+                                    <div class="compare mt-4" *ngFor="let item ">
+                                        <mat-checkbox (click)="addtoCompare(item)">add to compare</mat-checkbox>
+                                    </div>
+                                    <div class="compare mt-4">
                                         <mat-checkbox>add to compare</mat-checkbox>
                                     </div>
                                     <mat-divider></mat-divider>
@@ -92,7 +105,8 @@
                                         <p><i class="fa-solid fa-gauge"></i>{{post.fuel}}</p>
                                         <mat-divider></mat-divider>
                                         <!-- <p><i class="fa-solid fa-gear"></i>{{post.transmission}}</p> -->
-                                        <p class="ml-4"><img src="../../../../assets/images/icons/transmission.png" width="20px" alt="" srcset=""> {{post.transmission}}</p>
+                                        <p class="ml-4"><img src="../../../../assets/images/icons/transmission.png"
+                                                width="20px" alt="" srcset=""> {{post.transmission}}</p>
                                         <mat-divider></mat-divider>
                                         <p><i class="fa-solid fa-road"></i>{{post.km}}</p>
                                         <mat-divider></mat-divider>
@@ -110,9 +124,6 @@
                     <pagination-controls (pageChange)="onTableDataChange($event)"> </pagination-controls>
                 </div>
             </div>
-           
         </div>
     </div>
 </section>
-
-<!-- <img src="" alt="" srcset=""> -->

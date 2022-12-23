@@ -6,7 +6,7 @@
   <title>PopularCarsOman</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="/src/assets/images/favicon.ico"> -->
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
   <!-- google font -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -19,7 +19,6 @@
 
   <!-- bootstrap -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
@@ -40,9 +39,7 @@
 
 
   <script type="text/javascript">
-
-
-    // for cars caurosel
+    // for the select car caurosel
     $(document).ready(function () {
       var silder = $(".owl-carousel");
       silder.owlCarousel({
@@ -50,10 +47,10 @@
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
         items: 1,
-        stagePadding: 20,
+        stagePadding: 35,
         center: true,
         nav: false,
-        margin: 50,
+        margin: 35,
         dots: false,
         loop: true,
         responsive: {
@@ -66,6 +63,26 @@
         }
       });
     });
+
+    // for the image model
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
   </script>
 
 </body>

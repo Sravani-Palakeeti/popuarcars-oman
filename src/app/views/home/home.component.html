@@ -3,33 +3,13 @@
     <div class="container-fluid">
         <div class="row d-flex">
             <div class="col-lg-9">
-                <div class="card card-raised card-carousel">
+                <div class=" card-raised card-carousel">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
                         data-interval="3000">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <!-- <img class="d-block w-100"
-                                    src="../../../assets/images/home-sliders/Infiniti-Q50-US_Dealers-2013_Web.jpg"
-                                    alt="First slide"> -->
-                                    <img src="../../../assets/images/slider-images/img-4.jpeg" class="d-block w-100" alt="" srcset="">
+                            <div class="carousel-item" *ngFor="let image of images; let i=index" [ngClass]="(i === 0) ? 'active' : ''">
+                                <img src="{{image}}"class="d-block w-100 image-fluid " alt="" srcset="">
                                 <div class="carousel-caption ">
-                                    <h1>quality vehicle <br> reliable service</h1>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../../assets/images/slider-images/img-5.jpeg" class="d-block w-100" alt="" srcset="">
-                                <!-- <img class="d-block w-100"
-                                    src="../../../assets/images/home-sliders/Renault-Fluence-Facelift_1583x667.jpg"
-                                    alt="Second slide"> -->
-                                <div class="carousel-caption">
-                                    <h1>find your <br> pre-owned car</h1>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../../assets/images/slider-images/img-6.jpeg" class="d-block w-100" alt="" srcset="">
-                                <!-- <img class="d-block w-100"
-                                    src="../../../assets/images/home-sliders/X-Trail_1583x700+.jpg" alt="Third slide"> -->
-                                <div class="carousel-caption">
                                     <h1>quality vehicle <br> reliable service</h1>
                                 </div>
                             </div>
@@ -79,7 +59,7 @@
                         </select>
                         <div class="row buttons mt-3">
                             <button class="btn1">find car</button>
-                            <button class="btn2">view all vehicles</button>
+                            <button class="btn2" routerLink="/buy-cars">view all vehicles</button>
                         </div>
                     </div>
                 </div>
@@ -96,405 +76,368 @@
         <div class="row">
             <!-- Nav tabs -->
             <div class="card w-100 mt-2">
-                    <ul class="nav nav-tabs  justify-content-center" role="tablist">
-                        <li class="nav-item ">
-                            <a class="nav-link active" data-toggle="tab" href="#sedan" role="tab"> sedan </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#crossover" role="tab">crossover </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" data-toggle="tab" href="#commercial" role="tab"> commercial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#suv" role="tab">suv</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#sedan" role="tab">view all</a>
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content mb-4">
-                        <div class="tab-pane  active" id="sedan" data-dismiss="tabpanel" role="tabpanel">
-                            <div class="owl-carousel owl-theme mt-5">
-                                 
-                                <div class="owl-item">
-                                    <mat-card>
-                                        <img mat-card-image
-                                            src="../../../assets/images/home-select car/sedan/sunny-2.jpg" alt="">
-                                        <mat-card-content>
-                                            <div class="row border-bottom ">
-                                                <div class="col-lg-6 pt-2 mt-1">
-                                                    <h4>nissan sunny</h4>
-                                                </div>
-                                                <div class="col-lg-6 float-right">
-                                                    <div class=" price  ">
-                                                        <p>omr <span>2950</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                fuel petrol</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                Under 160251 Kms </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                transmission manual</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                manufacturing year 2017</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 cylinders </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 doors </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                color white</p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button>buy it</button>
-                                        </mat-card-actions>
-                                    </mat-card>
-                                </div>
-                                <div class="owl-item">
-                                   <mat-card>
-                                        <img mat-card-image
-                                            src="../../../assets/images/home-select car/sedan/sunny-2.jpg" alt="">
-                                        <mat-card-content>
-                                            <div class="row border-bottom ">
-                                                <div class="col-lg-6 pt-2 mt-1">
-                                                    <h4>nissan sunny</h4>
-                                                </div>
-                                                <div class="col-lg-6 float-right">
-                                                    <div class=" price  ">
-                                                        <p>omr <span>3250</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                fuel petrol</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                Under 157902 Kms </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                transmission manual</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                manufacturing year 2018</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 cylinders </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                5 doors </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                color white</p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button>buy it</button>
-                                        </mat-card-actions>
-                                    </mat-card>
-                                </div>
-                                <div class="owl-item">
-                                    <mat-card>
-                                        <img mat-card-image
-                                            src="../../../assets/images/home-select car/sedan/sunny-3.jpg" alt="">
-                                        <mat-card-content>
-                                            <div class="row border-bottom ">
-                                                <div class="col-lg-6 pt-2 mt-1">
-                                                    <h4>nissan sunny</h4>
-                                                </div>
-                                                <div class="col-lg-6 float-right">
-                                                    <div class=" price  ">
-                                                        <p>omr <span>3500</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                fuel petrol</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                Under 141753 Kms </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                transmission manual</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                manufacturing year 2018</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 cylinders </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 doors </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                color white</p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button>buy it</button>
-                                        </mat-card-actions>
-                                    </mat-card>
-                                </div>
-                                <div class="owl-item">
-                                    <mat-card>
-                                        <img mat-card-image
-                                            src="../../../assets/images/home-select car/sedan/sentra.jpeg" alt="">
-                                        <mat-card-content>
-                                            <div class="row border-bottom ">
-                                                <div class="col-lg-6 pt-2 mt-1">
-                                                    <h4>nissan sentra</h4>
-                                                </div>
-                                                <div class="col-lg-6 float-right">
-                                                    <div class=" price  ">
-                                                        <p>omr <span>3250</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                fuel petrol</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                Under 95695 Kms </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                transmission manual</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                manufacturing year 2017</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 cylinders </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 doors </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                color white</p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button>buy it</button>
-                                        </mat-card-actions>
-                                    </mat-card>
-                                </div>
-                                <div class="owl-item">
-                                    <mat-card>
-                                        <img mat-card-image
-                                            src="../../../assets/images/home-select car/sedan/altima.jpg" 
-                                            alt="">
-                                        <mat-card-content>
-                                            <div class="row border-bottom ">
-                                                <div class="col-lg-6 pt-2 mt-1">
-                                                    <h4>nissan altima</h4>
-                                                </div>
-                                                <div class="col-lg-6 float-right">
-                                                    <div class=" price  ">
-                                                        <p>omr <span>6500</span></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                fuel petrol</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                Under 102570 Kms </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                transmission manual</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                manufacturing year 2018</p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 cylinders </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                4 doors </p>
-                                            <p class="row"> <img
-                                                    src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                    srcset="">
-                                                color white</p>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button>buy it</button>
-                                        </mat-card-actions>
-                                    </mat-card>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="crossover" role="tabpanel">
-                            <div class="row d-flex ml-4 mt-5 select">
+                <ul class="nav nav-tabs  justify-content-center" role="tablist">
+                    <li class="nav-item ">
+                        <a class="nav-link active" data-toggle="tab" href="#sedan" role="tab"> sedan </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#crossover" role="tab">crossover </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tab" href="#commercial" role="tab"> commercial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#suv" role="tab">suv</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#all" role="tab">view all</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content mb-4">
+                    <div class="tab-pane  active" id="sedan" data-dismiss="tabpanel" role="tabpanel">
+                        <div class="owl-carousel owl-theme mt-5">
+
+                            <div class="owl-item ">
                                 <mat-card>
-                                    <img mat-card-image
-                                        src="../../../assets/images/home-select car/crossover/kicks.jpeg" alt="">
-                                    <mat-card-content>
-                                        <div class="row border-bottom ">
-                                            <div class="col-lg-5 pt-2 mt-1">
-                                                <h4>nissan kicks</h4>
-                                            </div>
-                                            <div class="col-lg-7 float-right">
-                                                <div class=" price  ">
-                                                    <p>omr <span>7000</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" width="20px"
-                                                alt=" " srcset="">
-                                            fuel petrol</p>
-                                        <p class="row" > <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 73588 Kms </p>
-                                        <p class="row "><img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            transmission manual</p>
-                                        <p class="row" > <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2018</p>
-                                        <p class="row" > <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            4 cylinders </p>
-                                        <p class="row" > <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            4 doors </p>
-                                        <p class="row" > <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            color orange</p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                        <button mat-button>buy it</button>
-                                    </mat-card-actions>
-                                </mat-card>
-                                <mat-card>
-                                    <img mat-card-image
-                                        src="../../../assets/images/home-select car/crossover/x-trail.jpeg" alt="">
+                                    <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-2.jpg"
+                                        alt="">
                                     <mat-card-content>
                                         <div class="row border-bottom ">
                                             <div class="col-lg-6 pt-2 mt-1">
-                                                <h4>nissan x-trail</h4>
+                                                <h4>nissan sunny</h4>
                                             </div>
                                             <div class="col-lg-6 float-right">
                                                 <div class=" price  ">
-                                                    <p>omr <span>7000</span></p>
+                                                    <p>omr <span>2950</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             fuel petrol</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 140895 Kms </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            Under 160251 Kms </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             transmission manual</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2018</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            manufacturing year 2017</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             4 cylinders </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            5 doors </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 doors </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             color white</p>
                                     </mat-card-content>
                                     <mat-card-actions>
                                         <button mat-button>buy it</button>
                                     </mat-card-actions>
                                 </mat-card>
+                            </div>
+                            <div class="owl-item">
                                 <mat-card>
-                                    <img mat-card-image
-                                        src="../../../assets/images/home-select car/crossover/renault duster.jpeg"
+                                    <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-2.jpg"
                                         alt="">
                                     <mat-card-content>
                                         <div class="row border-bottom ">
                                             <div class="col-lg-6 pt-2 mt-1">
-                                                <h4>renault duster</h4>
+                                                <h4>nissan sunny</h4>
                                             </div>
                                             <div class="col-lg-6 float-right">
                                                 <div class=" price  ">
-                                                    <p>omr <span>3000</span></p>
+                                                    <p>omr <span>3250</span></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             fuel petrol</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 88551 Kms </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            Under 157902 Kms </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             transmission manual</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2017</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            manufacturing year 2018</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
                                             4 cylinders </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            4 doors </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            color green</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            5 doors </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            color white</p>
                                     </mat-card-content>
                                     <mat-card-actions>
                                         <button mat-button>buy it</button>
                                     </mat-card-actions>
                                 </mat-card>
-                                
+                            </div>
+                            <div class="owl-item">
+                                <mat-card>
+                                    <img mat-card-image src="../../../assets/images/home-select car/sedan/sunny-3.jpg"
+                                        alt="">
+                                    <mat-card-content>
+                                        <div class="row border-bottom ">
+                                            <div class="col-lg-6 pt-2 mt-1">
+                                                <h4>nissan sunny</h4>
+                                            </div>
+                                            <div class="col-lg-6 float-right">
+                                                <div class=" price  ">
+                                                    <p>omr <span>3500</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            fuel petrol</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            Under 141753 Kms </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            transmission manual</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            manufacturing year 2018</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 cylinders </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 doors </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            color white</p>
+                                    </mat-card-content>
+                                    <mat-card-actions>
+                                        <button mat-button>buy it</button>
+                                    </mat-card-actions>
+                                </mat-card>
+                            </div>
+                            <div class="owl-item">
+                                <mat-card>
+                                    <img mat-card-image src="../../../assets/images/home-select car/sedan/sentra.jpeg"
+                                        alt="">
+                                    <mat-card-content>
+                                        <div class="row border-bottom ">
+                                            <div class="col-lg-6 pt-2 mt-1">
+                                                <h4>nissan sentra</h4>
+                                            </div>
+                                            <div class="col-lg-6 float-right">
+                                                <div class=" price  ">
+                                                    <p>omr <span>3250</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            fuel petrol</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            Under 95695 Kms </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            transmission manual</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            manufacturing year 2017</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 cylinders </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 doors </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            color white</p>
+                                    </mat-card-content>
+                                    <mat-card-actions>
+                                        <button mat-button>buy it</button>
+                                    </mat-card-actions>
+                                </mat-card>
+                            </div>
+                            <div class="owl-item">
+                                <mat-card>
+                                    <img mat-card-image src="../../../assets/images/home-select car/sedan/altima.jpg"
+                                        alt="">
+                                    <mat-card-content>
+                                        <div class="row border-bottom ">
+                                            <div class="col-lg-6 pt-2 mt-1">
+                                                <h4>nissan altima</h4>
+                                            </div>
+                                            <div class="col-lg-6 float-right">
+                                                <div class=" price  ">
+                                                    <p>omr <span>6500</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            fuel petrol</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            Under 102570 Kms </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            transmission manual</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            manufacturing year 2018</p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 cylinders </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            4 doors </p>
+                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                                alt=" " srcset="">
+                                            color white</p>
+                                    </mat-card-content>
+                                    <mat-card-actions>
+                                        <button mat-button>buy it</button>
+                                    </mat-card-actions>
+                                </mat-card>
                             </div>
                         </div>
-                        <!-- commercial -->
-                        <div class="tab-pane" id="commercial" role="tabpanel">
-                           <div class="ml-4 mt-5 select">
+                    </div>
+                    <div class="tab-pane" id="crossover" role="tabpanel">
+                        <div class="row d-flex ml-4 mt-5 select">
+                            <mat-card>
+                                <img mat-card-image src="../../../assets/images/home-select car/crossover/kicks.jpeg"
+                                    alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-5 pt-2 mt-1">
+                                            <h4>nissan kicks</h4>
+                                        </div>
+                                        <div class="col-lg-7 float-right">
+                                            <div class=" price  ">
+                                                <p>omr <span>7000</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            width="20px" alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 73588 Kms </p>
+                                    <p class="row "><img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color orange</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
+                            <mat-card>
+                                <img mat-card-image src="../../../assets/images/home-select car/crossover/x-trail.jpeg"
+                                    alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-6 pt-2 mt-1">
+                                            <h4>nissan x-trail</h4>
+                                        </div>
+                                        <div class="col-lg-6 float-right">
+                                            <div class=" price  ">
+                                                <p>omr <span>7000</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 140895 Kms </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        5 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color white</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
+                            <mat-card>
+                                <img mat-card-image
+                                    src="../../../assets/images/home-select car/crossover/renault duster.jpeg" alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-6 pt-2 mt-1">
+                                            <h4>renault duster</h4>
+                                        </div>
+                                        <div class="col-lg-6 float-right">
+                                            <div class=" price  ">
+                                                <p>omr <span>3000</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 88551 Kms </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2017</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color green</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
+
+                        </div>
+                    </div>
+                    <!-- commercial -->
+                    <div class="tab-pane" id="commercial" role="tabpanel">
+                        <div class="ml-4 mt-5 select">
                             <mat-card>
                                 <img mat-card-image
                                     src="../../../assets/images/home-select car/commercial/foton-tunland.jpeg" alt="">
@@ -509,163 +452,163 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         fuel petrol</p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         Under 1109 Kms </p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         transmission manual</p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         manufacturing year 2022</p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         4 cylinders </p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         4 doors </p>
-                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                            srcset="">
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
                                         color white</p>
                                 </mat-card-content>
                                 <mat-card-actions>
                                     <button mat-button>buy it</button>
                                 </mat-card-actions>
                             </mat-card>
-                           </div>
                         </div>
-                        <!-- end commercial -->
-                        <!-- suv -->
-                        <div class="tab-pane " id="suv" role="tabpanel">
-                            <div class="row d-flex ml-4 mt-5 select">
-                                <mat-card>
-                                    <img mat-card-image
-                                        src="../../../assets/images/home-select car/suv/nissan-patrol-1.jpeg" alt="">
-                                    <mat-card-content>
-                                        <div class="row border-bottom ">
-                                            <div class="col-lg-6 pt-2 mt-1">
-                                                <h4>nissan patrol</h4>
-                                            </div>
-                                            <div class="col-lg-6 float-right">
-                                                <div class=" price ">
-                                                    <p>omr <span>20000</span></p>
-                                                </div>
+                    </div>
+                    <!-- end commercial -->
+                    <!-- suv -->
+                    <div class="tab-pane " id="suv" role="tabpanel">
+                        <div class="row d-flex ml-4 mt-5 select">
+                            <mat-card>
+                                <img mat-card-image
+                                    src="../../../assets/images/home-select car/suv/nissan-patrol-1.jpeg" alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-6 pt-2 mt-1">
+                                            <h4>nissan patrol</h4>
+                                        </div>
+                                        <div class="col-lg-6 float-right">
+                                            <div class=" price ">
+                                                <p>omr <span>20000</span></p>
                                             </div>
                                         </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            fuel petrol</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 141650 Kms </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            transmission manual</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2018</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            8 cylinders </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            5 doors </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            color gold</p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                        <button mat-button>buy it</button>
-                                    </mat-card-actions>
-                                </mat-card>
-                                <mat-card>
-                                    <img mat-card-image src="../../../assets/images/home-select car/suv/changan cs.jpeg"
-                                        alt="">
-                                    <mat-card-content>
-                                        <div class="row border-bottom ">
-                                            <div class="col-lg-6 pt-2 mt-1">
-                                                <h4>changan cd 95</h4>
-                                            </div>
-                                            <div class="col-lg-6 float-right">
-                                                <div class=" price ">
-                                                    <p>omr <span>10500</span></p>
-                                                </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 141650 Kms </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2018</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        8 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        5 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color gold</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
+                            <mat-card>
+                                <img mat-card-image src="../../../assets/images/home-select car/suv/changan cs.jpeg"
+                                    alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-6 pt-2 mt-1">
+                                            <h4>changan cd 95</h4>
+                                        </div>
+                                        <div class="col-lg-6 float-right">
+                                            <div class=" price ">
+                                                <p>omr <span>10500</span></p>
                                             </div>
                                         </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            fuel petrol</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 10891 Kms </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            transmission manual</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2022</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            4 cylinders </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            5 doors </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            color white</p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                        <button mat-button>buy it</button>
-                                    </mat-card-actions>
-                                </mat-card>
-                                <mat-card>
-                                    <img mat-card-image
-                                        src="../../../assets/images/home-select car/suv/nissan-patrol-2.jpeg" alt="">
-                                    <mat-card-content>
-                                        <div class="row border-bottom ">
-                                            <div class="col-lg-6 pt-2 mt-1">
-                                                <h4>nissan patrol</h4>
-                                            </div>
-                                            <div class="col-lg-6 float-right">
-                                                <div class=" price ">
-                                                    <p>omr <span>16500</span></p>
-                                                </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 10891 Kms </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2022</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        4 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        5 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color white</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
+                            <mat-card>
+                                <img mat-card-image
+                                    src="../../../assets/images/home-select car/suv/nissan-patrol-2.jpeg" alt="">
+                                <mat-card-content>
+                                    <div class="row border-bottom ">
+                                        <div class="col-lg-6 pt-2 mt-1">
+                                            <h4>nissan patrol</h4>
+                                        </div>
+                                        <div class="col-lg-6 float-right">
+                                            <div class=" price ">
+                                                <p>omr <span>16500</span></p>
                                             </div>
                                         </div>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            fuel petrol</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            Under 113817 Kms </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            transmission manual</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            manufacturing year 2015</p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            8 cylinders </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            5 doors </p>
-                                        <p class="row"> <img src="../../../assets/images/home-select car/verified.png" alt=" "
-                                                srcset="">
-                                            color white</p>
-                                    </mat-card-content>
-                                    <mat-card-actions>
-                                        <button mat-button>buy it</button>
-                                    </mat-card-actions>
-                                </mat-card>
-                            </div>
+                                    </div>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        fuel petrol</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        Under 113817 Kms </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        transmission manual</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        manufacturing year 2015</p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        8 cylinders </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        5 doors </p>
+                                    <p class="row"> <img src="../../../assets/images/home-select car/verified.png"
+                                            alt=" " srcset="">
+                                        color white</p>
+                                </mat-card-content>
+                                <mat-card-actions>
+                                    <button mat-button>buy it</button>
+                                </mat-card-actions>
+                            </mat-card>
                         </div>
-                        <!-- suv end -->
-                        <!-- all -->
-                        <!-- <div class="tab-pane  active" id="all" data-dismiss="tabpanel" role="tabpanel">
+                    </div>
+                    <!-- suv end -->
+                    <!-- all -->
+                    <!-- <div class="tab-pane  active" id="all" data-dismiss="tabpanel" role="tabpanel">
                             <div class="owl-carousel owl-theme mt-5">
                                 <div class="owl-item">
                                     <mat-card>
@@ -1213,8 +1156,8 @@
                                 </div>
                             </div>
                         </div> -->
-                        <!-- end all -->
-                    </div>
+                    <!-- end all -->
+                </div>
             </div>
             <!-- all tabs end -->
         </div>

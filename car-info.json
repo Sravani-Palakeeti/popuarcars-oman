@@ -8,18 +8,18 @@
             "images": [
                 "../../../../assets/images/car-info/id-1(sunny-2017)/1.jpg",
                 "../../../../assets/images/car-info/id-1(sunny-2017)/2.jpg",
-                "../../../../assets/images/car-info/id-1(sunny-2017)/3.jpg",
+                "../../../../assets/images/car-info/id-1(sunny-2017)/3.jpeg",
                 "../../../../assets/images/car-info/id-1(sunny-2017)/4.jpg"
             ],
             "features": [
-                "Body Type : Sedan",
-                "Kilometers : 160251",
-                "color : white",
-                "location : muscat",
-                "no. of doors : 4",
+                "Body Type        : Sedan",
+                "Kilometers       : 160251",
+                "color            : white",
+                "location         : muscat",
+                "no. of doors     : 4",
                 "no. of cylinders : 4",
-                "transmission : automatic",
-                "fuel : petrol"
+                "transmission     : automatic",
+                "fuel             : petrol"
             ],
             "specs": [
                 {

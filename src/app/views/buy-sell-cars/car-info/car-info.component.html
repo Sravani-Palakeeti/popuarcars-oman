@@ -11,110 +11,115 @@
         </div>
         <!-- end breadcrumbs -->
         <div class="row">
-             <div class="col-lg-3">
+            <div class="col-lg-3">
                 <app-emi-calculator></app-emi-calculator>
-             </div>
-             <div class="col-lg-9">
-                <h2>car information</h2>
-                  <div class="card">
-                    <div class="row" >
+            </div>
+            <div class="col-lg-9">
+                <h3>car information</h3>
+                <div class="card">
+                    <div class="row">
                         <div class="col-lg-8">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-                                <div class="carousel-inner"  >
-                                  <div class="carousel-item " *ngFor="let image of item_data.images">
-                                    <img class="d-block w-100" src="{{image}}" alt="First slide">
+                            <div class="carousel">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner w-100">
+                                        <div *ngFor="let image of item_data.images; let i=index" [ngClass]="(i === 0) ? 'active' : ''" class="carousel-item">
+                                            <img src="{{image}}" alt="" srcset="" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
                                   </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
-                            <!-- <div *ngFor="let image of item_data.images">
-                                <img src="{{image}}" alt="">
-                            </div> -->
+                            </div>
                         </div>
                         <div class="col-lg-4">
-                           <h2> {{item_data.title}}</h2>
-                            <p class="currency">{{item_data.currency}} <span>{{item_data.price}}</span></p>
-                           <div *ngFor="let list of item_data.features">
-                            <p><img src="../../../../assets/images/home-select car/verified.png" alt="" srcset=""> {{list}}</p>
-                           </div>
+                            <h2> {{item_data.title}}</h2>
+
+                            <div *ngFor="let list of item_data.features">
+                                <p><img src="../../../../assets/images/home-select car/verified.png" alt="" srcset="">
+                                    {{list}}</p>
+                            </div>
+                            <p class="currency ">{{item_data.currency}} <span>{{item_data.price}}</span></p>
+                            <!-- <i class="fa-solid fa-share ml-3">share</i> -->
+                             <i class="fa-solid fa-share ml-3"> share </i>
+                            
                         </div>
                     </div>
-                  </div>
-                  <h3>features & specs</h3>
-                  <div *ngFor="let item of item_data.specs">
+                </div>
+                <h3>features & specs</h3>
+                <div *ngFor="let item of item_data.specs">
                     <h2>{{item.heading}}</h2>
-                    <p><img src="../../../../assets/images/car-info/left-down.png" alt="" srcset=""> {{item.data}}</p>
+                    <p>{{item.data}}</p>
                     <h2>{{item.title}}</h2>
-                    <div class="col-lg-6" *ngFor="let items of item.feature" >
-                        <p><img src="../../../../assets/images/car-info/left-down.png" alt="" srcset=""> {{items}}</p>
-                    </div>
-                  </div>
-                 
-                <!-- <app-enquiry></app-enquiry> -->
-                <form action="">
                     <div class="row">
-                        <h2>enquiry</h2>
-                       </div>
-                  <mat-radio-group aria-label="Select an option" >
-                      <mat-radio-button value="1">Male</mat-radio-button>
-                      <mat-radio-button class="ml-4" value="2">female</mat-radio-button>
+                        <div class="col-md-6" *ngFor="let items of item.feature">
+                            <li>{{items}}</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- <app-enquiry></app-enquiry> -->
+              <div class="form">
+                <form action="">
+                    <h2>enquiry</h2>
+                    <mat-radio-group aria-label="Select an option" class="mt-3">
+                        <mat-radio-button value="1">Male</mat-radio-button>
+                        <mat-radio-button class="ml-4" value="2">female</mat-radio-button>
                     </mat-radio-group>
-                  <div class="row">
-                      <div class="col-lg-6">
-                          <mat-form-field appearance="outline">
-                              <mat-label>name and surname</mat-label>
-                              <input type="text" name="name" id="" matInput placeholder="name and surname"
-                                  class="px-2" [formControl]="name" required>
-                              <mat-error *ngIf="name.invalid">{{getErrorMessagename()}}</mat-error>
-                          </mat-form-field>
-                      </div>
-                      <div class="col-lg-6">
-                          <mat-form-field appearance="outline">
-                              <mat-label>your email address</mat-label>
-                              <input type="text" name="email" id="" matInput placeholder="your email address"
-                                  class="px-2" [formControl]="email" required>
-                              <mat-error *ngIf="email.invalid">{{getErrorMessageemail()}}</mat-error>
-                          </mat-form-field>
-                      </div>  
-                      <div class="col-lg-6">
-                          <mat-form-field appearance="outline">
-                              <mat-label class="phone"> Your Mobile number</mat-label>
-                              <input type="tel" matInput id="txtPhone" placeholder="Mobile Number" name="phone"
-                                  [formControl]="phone" required>
-                              <mat-error *ngIf="phone.invalid">{{getErrorMessagephone()}}</mat-error>
-                          </mat-form-field>
-                      </div>
-                      <div class="col-lg-6">
-                          <mat-form-field appearance="outline">
-                              <mat-label class="phone"> Your cell phone number</mat-label>
-                              <input type="tel" matInput id="txtPhone" placeholder="your cell phone Number" name="phone"
-                                  [formControl]="phone" required>
-                              <mat-error *ngIf="phone.invalid">{{getErrorMessagephone()}}</mat-error>
-                          </mat-form-field>
-                      </div>
-                  </div>
-                  <div class="">
-                      <mat-form-field appearance="outline" class="text">
-                          <mat-label>additional information</mat-label>
-                          <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
-                              placeholder="Type your feedback/message" cdkAutosizeMaxRows="7" [formControl]="textarea"
-                              required>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>name and surname</mat-label>
+                                <input type="text" name="name" id="" matInput placeholder="name and surname"
+                                    class="px-2" [formControl]="name" required>
+                                <mat-error *ngIf="name.invalid">{{getErrorMessagename()}}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label>your email address</mat-label>
+                                <input type="text" name="email" id="" matInput placeholder="your email address"
+                                    class="px-2" [formControl]="email" required>
+                                <mat-error *ngIf="email.invalid">{{getErrorMessageemail()}}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label class="phone"> Your Mobile number</mat-label>
+                                <input type="tel" matInput id="txtPhone" placeholder="Mobile Number" name="phone"
+                                    [formControl]="phone" required>
+                                <mat-error *ngIf="phone.invalid">{{getErrorMessagephone()}}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-6">
+                            <mat-form-field appearance="outline">
+                                <mat-label class="phone"> Your cell phone number</mat-label>
+                                <input type="tel" matInput id="txtPhone" placeholder="your cell phone Number"
+                                    name="phone" [formControl]="phone" required>
+                                <mat-error *ngIf="phone.invalid">{{getErrorMessagephone()}}</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="">
+                        <mat-form-field appearance="outline" class="text">
+                            <mat-label>additional information</mat-label>
+                            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+                                cdkAutosizeMinRows="1" placeholder="Type your feedback/message" cdkAutosizeMaxRows="7"
+                                [formControl]="textarea" required>
                           </textarea>
-                          <!-- <mat-error *ngIf="phone.invalid">{{getErrorMessageTextArea()}}</mat-error> -->
-                      </mat-form-field>
-                  </div>
-                  <div class="">
-                      <button mat-flat-button color="primary">submit</button>
-                  </div>
-              </form>
-             </div>
+                            <!-- <mat-error *ngIf="phone.invalid">{{getErrorMessageTextArea()}}</mat-error> -->
+                        </mat-form-field>
+                    </div>
+                    <div class="">
+                        <button mat-flat-button color="primary">submit</button>
+                    </div>
+                </form>
+              </div>
+            </div>
         </div>
     </div>
 </section>

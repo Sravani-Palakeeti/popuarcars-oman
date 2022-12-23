@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CarInfoService } from 'src/app/services/car-info.service';
 import { ActivatedRoute } from '@angular/router';
 import { FormControl, Validators } from '@angular/forms';
+import { CarInfoService } from 'src/app/services/car-info/car-info.service';
 
 @Component({
   selector: 'app-car-info',
@@ -9,6 +9,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./car-info.component.scss']
 })
 export class CarInfoComponent implements OnInit {
+
   products: any;
   url: any;
   item_data:any;
@@ -19,7 +20,7 @@ export class CarInfoComponent implements OnInit {
   }
   
   fetchPosts(): void {
-    this.url =window.location.href;
+    this.url = window.location.href;
     var item_id = this.url.split('/')[4] ;
     this.carService.getAllPosts().subscribe(
       (response) => {
@@ -68,6 +69,5 @@ export class CarInfoComponent implements OnInit {
     }
     return this.phone.hasError('phone') ? 'enter query/feedback' : '';
   }
-
 
 }

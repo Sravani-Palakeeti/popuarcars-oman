@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Options, LabelType } from '@angular-slider/ngx-slider';
 import { BuyCarService } from 'src/app/services/buy-car/buy-car.service';
+import { CompareService } from 'src/app/services/compare/compare.service';
 
 @Component({
   selector: 'app-buy-cars',
@@ -48,7 +49,7 @@ export class BuyCarsComponent implements OnInit {
   count: number = 0;
   tableSize: number = 4;
   tableSizes: any = [10, 25, 50, 75, 100];
-  constructor(private carService: BuyCarService,) { }
+  constructor(private carService: BuyCarService, public compareService : CompareService) { }
   ngOnInit(): void {
     this.fetchPosts();
   }
@@ -67,9 +68,16 @@ export class BuyCarsComponent implements OnInit {
     this.page = event;
     this.fetchPosts();
   }
-  onTableSizeChange(event: any): void {
-    this.tableSize = event.target.value;
-    this.page = 1;
-    this.fetchPosts();
+  // onTableSizeChange(event: any): void {
+  //   this.tableSize = event.target.value;
+  //   this.page = 1;
+  //   this.fetchPosts();
+  // }
+
+  addtoCompare(item:any){
+    this.compareService.addtoCompare(item)
   }
+
+
+
 }

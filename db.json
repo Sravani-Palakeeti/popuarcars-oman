@@ -145,6 +145,573 @@
       "transmission": "automatic",
       "km": 141650
     }
-  ]
-  
+  ],
+  "car-info": [
+    {
+        "id": 1,
+        "title": "nissan sunny 2017",
+        "currency": "omr",
+        "price": 2950,
+        "images": [
+            "../../../../assets/images/car-info/id-1(sunny-2017)/1.jpg",
+            "../../../../assets/images/car-info/id-1(sunny-2017)/2.jpg",
+            "../../../../assets/images/car-info/id-1(sunny-2017)/3.jpeg",
+            "../../../../assets/images/car-info/id-1(sunny-2017)/4.jpg"
+        ],
+        "features": [
+            "Body Type        : Sedan",
+            "Kilometers       : 160251",
+            "color            : white",
+            "location         : muscat",
+            "no. of doors     : 4",
+            "no. of cylinders : 4",
+            "transmission     : automatic",
+            "fuel             : petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": "1.5 Litres"
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "4 Speed Automatic",
+                    "Cloth Upholstery",
+                    "CD/MP3 Stereo with USB Port",
+                    "Front Power Windows",
+                    "Power Steering",
+                    "Manual A/C"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "renault duster 2017",
+        "currency": "omr",
+        "price": 3000,
+        "images": [
+            "/assets/images/car-info/id-2(renault-duster)/1.jpeg",
+            "/assets/images/car-info/id-2(renault-duster)/2.jpeg",
+            "/assets/images/car-info/id-2(renault-duster)/3.jpeg",
+            "/assets/images/car-info/id-2(renault-duster)/4.jpeg",
+            "/assets/images/car-info/id-2(renault-duster)/5.jpeg"
+        ],
+        "features": [
+            "Body Type: Crossover",
+            "Kilometers: 88551",
+            "Color: GREEN",
+            "Location: Muscat",
+            "No. of Doors: 5",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.6 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Power Locks",
+                    "4 Speed Automatic",
+                    "Cloth Upholstery",
+                    "CD/MP3 Stereo with USB Port",
+                    "Power Steering",
+                    "Manual A/C",
+                    "CD/MP3 Sound System",
+                    "Power Windows",
+                    "CD Stereo",
+                    "USB/AUX Ports"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "nissan sunny 2018",
+        "currency": "omr",
+        "price": 3250,
+        "images": [
+            "/assets/images/car-info/id-3(sunny-2018)/1.jpg",
+            "/assets/images/car-info/id-3(sunny-2018)/2.jpg",
+            "/assets/images/car-info/id-3(sunny-2018)/3.jpg",
+            "/assets/images/car-info/id-3(sunny-2018)/4.jpg",
+            "/assets/images/car-info/id-3(sunny-2018)/5.jpg"
+        ],
+        "features": [
+            "Body Type : Sedan",
+            "Kilometers : 161515",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 4"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.5 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Power Locks",
+                    "Cloth Upholstery",
+                    "CD/MP3 Stereo with USB Port",
+                    "Front Power Windows"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "nissan sentra 2017",
+        "currency": "omr",
+        "price": 3250,
+        "images": [
+            "/assets/images/car-info/id-4(sentra)/1.jpeg",
+            "/assets/images/car-info/id-4(sentra)/2.jpeg",
+            "/assets/images/car-info/id-4(sentra)/3.jpeg",
+            "/assets/images/car-info/id-4(sentra)/4.jpeg",
+            "/assets/images/car-info/id-4(sentra)/5.jpeg"
+        ],
+        "features": [
+            "Body Type : Sedan",
+            "Kilometers : 95695",
+            "color : brown",
+            "location : muscat",
+            "no. of doors : 4",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.6 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Aux Audio In",
+                    "Cloth Upholstery",
+                    "CD/MP3 Stereo with USB Port",
+                    "Power Steering",
+                    "Manual A/C",
+                    "CD/MP3 Sound System",
+                    "Power Windows",
+                    "CD Stereo"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "nissan sunny 2018",
+        "currency": "omr",
+        "price": 3250,
+        "images": [
+            "/assets/images/car-info/id-5(sunny-2018)/1.jpg",
+            "/assets/images/car-info/id-5(sunny-2018)/2.jpg",
+            "/assets/images/car-info/id-5(sunny-2018)/3.jpg",
+            "/assets/images/car-info/id-5(sunny-2018)/4.jpg",
+            "/assets/images/car-info/id-5(sunny-2018)/5.jpg"
+        ],
+        "features": [
+            "Body Type : Sedan",
+            "Kilometers : 141753",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 4",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.5 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "4 Speed Automatic",
+                    "Cloth Upholstery",
+                    "Power Steering",
+                    "Front Power Windows",
+                    "Manual A/C",
+                    "USB/AUX Ports"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "FOTON TUNLAND P/UP 2022",
+        "currency": "omr",
+        "price": 5500,
+        "images": [
+            "/assets/images/car-info/id-6(foton-tunland)/1.jpeg",
+            "/assets/images/car-info/id-6(foton-tunland)/2.jpeg",
+            "/assets/images/car-info/id-6(foton-tunland)/3.jpeg",
+            "/assets/images/car-info/id-6(foton-tunland)/4.jpeg",
+            "/assets/images/car-info/id-6(foton-tunland)/5.jpeg"
+        ],
+        "features": [
+            "Body Type : Commercial",
+            "Kilometers : 1109",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 4",
+            "No. of Cylinders: 4",
+            "Transmission: Manual",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "2.7 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "nissan sunny 2018",
+        "currency": "omr",
+        "price": 3250,
+        "images": [
+            "/assets/images/car-info/id-7(sunny-2018)km-161515/1.jpg",
+            "/assets/images/car-info/id-7(sunny-2018)km-161515/2.jpg",
+            "/assets/images/car-info/id-7(sunny-2018)km-161515/3.jpg",
+            "/assets/images/car-info/id-7(sunny-2018)km-161515/4.jpg",
+            "/assets/images/car-info/id-7(sunny-2018)km-161515/5.jpg"
+        ],
+        "features": [
+            "Body Type : Sedan",
+            "Kilometers : 161515",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 4"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.5 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Power Locks",
+                    "Cloth Upholstery",
+                    "CD/MP3 Stereo with USB Port",
+                    "Front Power Windows"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "nissan altima 2018",
+        "currency": "omr",
+        "price": 6500,
+        "images": [
+            "/assets/images/car-info/id-8(altima)/1.jpg",
+            "/assets/images/car-info/id-8(altima)/2.jpg",
+            "/assets/images/car-info/id-8(altima)/3.jpg",
+            "/assets/images/car-info/id-8(altima)/4.jpg",
+            "/assets/images/car-info/id-8(altima)/5.jpg"
+        ],
+        "features": [
+            "Body Type : Sedan",
+            "Kilometers: 102570",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 4",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "2.4 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Power Locks",
+                    " Keyless Start",
+                    "DVD Player",
+                    "Alloy Wheels",
+                    "Remote Keyless entry with Push Button Ignition"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "nissan x-trail 2018",
+        "currency": "omr",
+        "price": 7000,
+        "images": [
+            "/assets/images/car-info/id-9(x-trail)/1.jpeg",
+            "/assets/images/car-info/id-9(x-trail)/2.jpeg",
+            "/assets/images/car-info/id-9(x-trail)/3.jpeg",
+            "/assets/images/car-info/id-9(x-trail)/4.jpeg"
+        ],
+        "features": [
+            "Body Type : Crossover",
+            "Kilometers: 140895",
+            "color : white",
+            "location : muscat",
+            "no. of doors : 5",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "2.4 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    " Keyless Start",
+                    "Alloy Wheels",
+                    "Moon Roof",
+                    "Power Sunroof",
+                    "Alarm /Anti-Theft System",
+                    " Bluetooth System",
+                    "Cruise Control",
+                    "Radio with CD Player with Aux-in and 4 speakers"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "nissan kicks 2018",
+        "currency": "omr",
+        "price": 7000,
+        "images": [
+            "/assets/images/car-info/id-10(kicks)/1.jpeg",
+            "/assets/images/car-info/id-10(kicks)/2.jpeg"
+        ],
+        "features": [
+            "Body Type: Crossover",
+            "Kilometers: 73588",
+            "Color: Orange",
+            "Location: Muscat",
+            "No. of Doors: 4",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "1.6 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Power Locks",
+                    " Keyless Start",
+                    "Aux Audio In",
+                    "Alloy Wheels",
+                    "Alarm /Anti-Theft System",
+                    "Bluetooth System",
+                    "Premium Wheels/Rims"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "CHANGAN CS 95 2022",
+        "currency": "omr",
+        "price": 10500,
+        "images": [
+            "/assets/images/car-info/id-11(changan)/1.jpeg",
+            "/assets/images/car-info/id-11(changan)/2.jpeg",
+            "/assets/images/car-info/id-11(changan)/3.jpeg",
+            "/assets/images/car-info/id-11(changan)/4.jpeg",
+            "/assets/images/car-info/id-11(changan)/5.jpeg"
+        ],
+        "features": [
+            "Body Type: SUV",
+            "Kilometers: 10891",
+            "Color: White",
+            "Location: Muscat",
+            "No. of Doors: 5",
+            "No. of Cylinders: 4",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "2.0 Litres"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning",
+                    "Aux Audio In",
+                    "Alarm /Anti-Theft System",
+                    "Bluetooth System",
+                    "DVD Player",
+                    "Power Front Seats",
+                    "Radio with CD Player with Aux-in and 4 speakers",
+                    "Automatic A/C",
+                    "Power Folding Mirrors",
+                    "Power Steering"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "nissan patrol 2015",
+        "currency": "omr",
+        "price": 16500,
+        "images": [
+            "/assets/images/car-info/id-12(patrol-2015)/1.jpeg",
+            "/assets/images/car-info/id-12(patrol-2015)/2.jpeg",
+            "/assets/images/car-info/id-12(patrol-2015)/3.jpeg",
+            "/assets/images/car-info/id-12(patrol-2015)/4.jpeg"
+        ],
+        "features": [
+            "Body Type: SUV",
+            "Kilometers: 113817",
+            "Color: White",
+            "Location: Muscat",
+            "No. of Doors: 5",
+            "No. of Cylinders: 8",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "5.6 LITRES V8 4WD"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Automatic A/C", 
+                    "Keyless Entry", 
+                    "Power Steering", 
+                    "CD/MP3 Sound System", 
+                    "Power Windows", 
+                    "Keyless Entry with Push-button Ignition", 
+                    "USB/AUX Ports"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "nissan patrol 2018",
+        "currency": "omr",
+        "price": 20000,
+        "images": [
+           "/assets/images/car-info/id-13(patrol-2018)/1.jpeg",
+           "/assets/images/car-info/id-13(patrol-2018)/2.jpeg",
+           "/assets/images/car-info/id-13(patrol-2018)/3.jpeg",
+           "/assets/images/car-info/id-13(patrol-2018)/4.jpeg"
+        ],
+        "features": [
+            "Body Type : SUV",
+            "Kilometers: 141650",
+            "color : golden",
+            "location : muscat",
+            "no. of doors : 5",
+            "No. of Cylinders: 8",
+            "Transmission: Automatic",
+            "Fuel: Petrol"
+        ],
+        "specs": [
+            {
+                "heading": "Basic Features",
+                "data": [
+                    "5.6 LITRES V8 4WD"
+                ]
+            },
+            {
+                "title": "comfort features",
+                "feature": [
+                    "Air Conditioning", 
+                    "Aux Audio In", 
+                    "Keyless Start", 
+                    "Moon Roof", 
+                    "Off-Road Tyres", 
+                    "Power Locks", 
+                    "Power Sunroof", 
+                    "Spoiler", 
+                    "Alarm /Anti-Theft System", 
+                    "Bluetooth System", 
+                    "Parking Sensors", 
+                    "Sunroof", 
+                    "Performance Tyres", 
+                    "Power Front Seats", 
+                    "Premium Wheels/Rims", 
+                    "Premium Sound System", 
+                    "Cruise Control", 
+                    "Alloy Wheels", 
+                    "Remote Keyless entry with Push Button Ignition", 
+                    "Radio with CD Player with Aux-in and 4 speakers", 
+                    "Audio Controls on Steering Wheel and Dual Airbags", 
+                    "Top Model Features Include Navigation", 
+                    "Automatic A/C", 
+                    "CD/MP3 Stereo with USB Port" , 
+                    "CD/MP3 Sound System"
+                ]
+            }
+        ]
+    }
+],
+"compare": [
+   
+  ]  
 }

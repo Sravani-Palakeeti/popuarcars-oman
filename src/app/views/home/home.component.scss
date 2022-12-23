@@ -4,7 +4,7 @@ caurosel section
 .caurosel {
 
     // margin-top: 80px;
-    .card.card-carousel {
+    .card .card-carousel {
         border: 0;
         margin-bottom: 30px;
         border-radius: 6px;
@@ -98,7 +98,7 @@ caurosel section
             color: #000101;
             // color: #e3e3e3;
 
-            @media (max-width:768px){
+            @media (max-width:768px) {
                 display: none;
             }
         }
@@ -160,13 +160,14 @@ caurosel section
             align-items: center;
         }
 
-        .car{
+        .car {
             background-color: #000101;
-           width: 285px !important;
+            width: 285px !important;
             height: 40px;
             position: relative;
             right: 14px;
             bottom: 5px;
+
             h6 {
                 padding-left: 10px;
                 padding-top: 9px;
@@ -176,10 +177,11 @@ caurosel section
                 color: #ffffff;
                 font-size: 16px;
                 font-weight: 800;
+
                 @media (max-width:1200px) {
                     width: 240px;
                 }
-    
+
                 @media (max-width:991px) {
                     display: inline;
                     font-size: 20px;
@@ -192,7 +194,7 @@ caurosel section
             }
         }
 
-       
+
 
 
         .car-search {
@@ -368,19 +370,20 @@ select car section
 *************************/
 .selectCar {
     margin-top: 2rem;
+
     h1 {
-        text-transform: capitalize;
+        text-transform: uppercase;
         color: #313131;
         font-size: 25px;
         text-align: center;
         letter-spacing: 1px;
-        // font-family: Futura-light, Trebuchet MS, Arial, sans-serif;
+        margin-top: 15px;
         font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
     }
-  
-    .nav-tabs{
+
+    .nav-tabs {
         background-color: #d3d2d2;
-        
+
     }
 
     li a {
@@ -398,57 +401,56 @@ select car section
         height: 20px;
     }
 
-    .owl-carousel .owl-item{
+    .owl-carousel .owl-item {
         mat-card {
             width: 330px;
+
             // height: 500px;
             // margin: 0 20px 10px 20px;
-            margin: auto;
-            
-    
-            img{
-               width: 330px; 
-              
+            // margin: auto ;
+            img {
+                width: 330px;
             }
-    
+
             h4 {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 16px;
                 font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
             }
-    
+
             p {
                 margin-top: 10px;
                 text-transform: capitalize;
-                 line-height: 10px;
-                 color: #585C5E;
-                 align-items: row;
-                 
+                line-height: 10px;
+                color: #585C5E;
+                align-items: row;
+
                 img {
                     width: 13px;
                     height: 13px;
                     margin-right: 5px;
                 }
             }
-    
+
             .price p {
                 color: #000101;
                 text-transform: uppercase;
                 font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
                 margin-left: 35px;
+
                 span {
                     // font-weight: 600;
                     font-size: 30px;
                     margin-left: 3px;
                     font-family: Futura Md BT, "Trebuchet MS", Arial, sans-serif;
                 }
-    
+
             }
-    
+
             button {
-               width: 330px !important;
-               height: 35px;
+                width: 330px !important;
+                height: 35px;
                 background-color: #E70001;
                 color: #ffffff;
                 font-weight: 550;
@@ -463,61 +465,62 @@ select car section
                 right: 8px;
                 top: 10px;
             }
-    
+
         }
     }
 
-    .select{
+    .select {
         mat-card {
             width: 330px;
             // height: 500px;
             margin: 0 20px 10px 20px;
             // margin: auto;
-            
-    
-            img{
-               width: 330px; 
-              
+
+
+            img {
+                width: 330px;
+
             }
-    
+
             h4 {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 16px;
                 font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
             }
-    
+
             p {
                 margin-top: 10px;
                 text-transform: capitalize;
-                 line-height: 10px;
-                 color: #585C5E;
-                 align-items: row;
-                 
+                line-height: 10px;
+                color: #585C5E;
+                align-items: row;
+
                 img {
                     width: 13px;
                     height: 13px;
                     margin-right: 5px;
                 }
             }
-    
+
             .price p {
                 color: #000101;
                 text-transform: uppercase;
                 font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
                 margin-left: 20px;
+
                 span {
                     // font-weight: 600;
                     font-size: 30px;
                     margin-left: 3px;
                     font-family: Futura Md BT, "Trebuchet MS", Arial, sans-serif;
                 }
-    
+
             }
-    
+
             button {
-               width: 330px !important;
-               height: 35px;
+                width: 330px !important;
+                height: 35px;
                 background-color: #E70001;
                 color: #ffffff;
                 font-weight: 550;
@@ -532,9 +535,9 @@ select car section
                 right: 8px;
                 top: 10px;
             }
-    
+
         }
-    
+
     }
 }
 
@@ -677,7 +680,7 @@ subscribe section
     margin-top: 6rem;
 
     h6 {
-        padding-top: 5%;
+        padding-top: 3%;
         text-align: center;
         text-transform: capitalize;
         color: #777676;
@@ -685,11 +688,11 @@ subscribe section
         line-height: 35px;
 
         span {
-            color: #000101;
+            text-align: center;
             text-transform: uppercase;
-            font-weight: bold;
-            font-size: 32px;
-            font-family: 'Roboto', sans-serif;
+            font-family: Futura Condensed Light, "Trebuchet MS", Arial, sans-serif;
+            color: #313131;
+            font-size: 25px;
         }
     }
 
