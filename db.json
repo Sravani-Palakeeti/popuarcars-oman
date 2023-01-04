@@ -2,7 +2,7 @@
   "cars": [
     {
       "id":1,
-      "name": "NISSAN SUNNY 2017",
+      "name": "NISSAN SUNNY ",
       "image": "../assets/images/buy-car/images/sunny-2.jpg",
       "currency": "omr",
       "price": 2950,
@@ -13,7 +13,7 @@
     },
     {
       "id":2,
-      "name": "RENAULT DUSTER 2017",
+      "name": "RENAULT DUSTER ",
       "image": "../assets/images/buy-car/images/renault duster.jpg",
       "currency": "omr",
       "price": 3000,
@@ -24,7 +24,7 @@
     },
     {
       "id":3,
-      "name": "NISSAN SUNNY 2018",
+      "name": "NISSAN SUNNY ",
       "image": "../assets/images/buy-car/images/sunny-3.jpg",
       "currency": "omr",
       "price": 3250,
@@ -35,7 +35,7 @@
     },
     {
       "id":4,
-      "name": "NISSAN SENTRA 2017",
+      "name": "NISSAN SENTRA ",
       "image": "../assets/images/buy-car/images/sentra.jpg",
       "currency": "omr",
       "price": 3500,
@@ -46,7 +46,7 @@
     },
     {
       "id":5,
-      "name": "NISSAN SUNNY 2018",
+      "name": "NISSAN SUNNY ",
       "image": "../assets/images/buy-car/images/sunny-2.jpg",
       "currency": "omr",
       "price": 3250,
@@ -57,7 +57,7 @@
     },
     {
       "id":6,
-      "name": "FOTON TUNLAND P/UP 2022",
+      "name": "FOTON TUNLAND P/UP ",
       "image": "../assets/images/buy-car/images/foton-tunland.jpg",
       "currency": "omr",
       "price": 5500,
@@ -68,7 +68,7 @@
     },
     {
       "id":7,
-      "name": "NISSAN SUNNY 2018",
+      "name": "NISSAN SUNNY ",
       "image": "../assets/images/buy-car/images/sunny-2.jpg",
       "currency": "omr",
       "price": 3250,
@@ -79,7 +79,7 @@
     },
     {
       "id":8,
-      "name": "NISSAN ALTIMA 2018",
+      "name": "NISSAN ALTIMA ",
       "image": "../assets/images/buy-car/images/altima.jpg",
       "currency": "omr",
       "price": 6500,
@@ -90,7 +90,7 @@
     },
     {
       "id":9,
-      "name": "NISSAN X-TRAIL 2018",
+      "name": "NISSAN X-TRAIL ",
       "image": "../assets/images/buy-car/images/x-trail.jpg",
       "currency": "omr",
       "price": 7000,
@@ -101,7 +101,7 @@
     },
     {
       "id":10,
-      "name": "NISSAN KICKS 2018",
+      "name": "NISSAN KICKS ",
       "image": "../assets/images/buy-car/images/kicks.jpg",
       "currency": "omr",
       "price": 7000,
@@ -112,7 +112,7 @@
     },
     {
       "id":11,
-      "name": "CHANGAN CS 95 2022",
+      "name": "CHANGAN CS 95 ",
       "image": "../assets/images/buy-car/images/changan cs.jpg",
       "currency": "omr",
       "price": 10500,
@@ -123,7 +123,7 @@
     },
     {
       "id":12,
-      "name": "NISSAN PATROL 2015",
+      "name": "NISSAN PATROL",
       "image": "../assets/images/buy-car/images/nissan-patrol-1.jpg",
       "currency": "omr",
       "price": 16500,
@@ -136,7 +136,7 @@
     },
     {
       "id":13,
-      "name": "NISSAN PATROL 2018",
+      "name": "NISSAN PATROL ",
       "image": "../assets/images/buy-car/images/nissan-patrol-2.jpg",
       "currency": "omr",
       "price": 20000,
@@ -149,9 +149,10 @@
   "car-info": [
     {
         "id": 1,
-        "title": "nissan sunny 2017",
+        "title": "nissan sunny ",
         "currency": "omr",
         "price": 2950,
+        "image": "../assets/images/buy-car/images/sunny-2.jpg",
         "images": [
             "../../../../assets/images/car-info/id-1(sunny-2017)/1.jpg",
             "../../../../assets/images/car-info/id-1(sunny-2017)/2.jpg",
@@ -166,7 +167,8 @@
             "no. of doors     : 4",
             "no. of cylinders : 4",
             "transmission     : automatic",
-            "fuel             : petrol"
+            "fuel             : petrol",
+            "year             : 2017"
         ],
         "specs": [
             {
@@ -189,9 +191,10 @@
     },
     {
         "id": 2,
-        "title": "renault duster 2017",
+        "title": "renault duster ",
         "currency": "omr",
         "price": 3000,
+        "image": "../assets/images/buy-car/images/renault duster.jpg",
         "images": [
             "/assets/images/car-info/id-2(renault-duster)/1.jpeg",
             "/assets/images/car-info/id-2(renault-duster)/2.jpeg",
@@ -207,7 +210,8 @@
             "No. of Doors: 5",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2017"
         ],
         "specs": [
             {
@@ -236,9 +240,10 @@
     },
     {
         "id": 3,
-        "title": "nissan sunny 2018",
+        "title": "nissan sunny ",
         "currency": "omr",
         "price": 3250,
+        "image": "../assets/images/buy-car/images/sunny-3.jpg",
         "images": [
             "/assets/images/car-info/id-3(sunny-2018)/1.jpg",
             "/assets/images/car-info/id-3(sunny-2018)/2.jpg",
@@ -251,7 +256,8 @@
             "Kilometers : 161515",
             "color : white",
             "location : muscat",
-            "no. of doors : 4"
+            "no. of doors : 4",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -274,9 +280,10 @@
     },
     {
         "id": 4,
-        "title": "nissan sentra 2017",
+        "title": "nissan sentra ",
         "currency": "omr",
         "price": 3250,
+        "image": "../assets/images/buy-car/images/sentra.jpg",
         "images": [
             "/assets/images/car-info/id-4(sentra)/1.jpeg",
             "/assets/images/car-info/id-4(sentra)/2.jpeg",
@@ -292,7 +299,8 @@
             "no. of doors : 4",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2017"
         ],
         "specs": [
             {
@@ -319,9 +327,10 @@
     },
     {
         "id": 5,
-        "title": "nissan sunny 2018",
+        "title": "nissan sunny ",
         "currency": "omr",
         "price": 3250,
+        "image": "../assets/images/buy-car/images/sunny-2.jpg",
         "images": [
             "/assets/images/car-info/id-5(sunny-2018)/1.jpg",
             "/assets/images/car-info/id-5(sunny-2018)/2.jpg",
@@ -337,7 +346,8 @@
             "no. of doors : 4",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -362,9 +372,10 @@
     },
     {
         "id": 6,
-        "title": "FOTON TUNLAND P/UP 2022",
+        "title": "FOTON TUNLAND P/UP",
         "currency": "omr",
         "price": 5500,
+        "image": "../assets/images/buy-car/images/foton-tunland.jpg",
         "images": [
             "/assets/images/car-info/id-6(foton-tunland)/1.jpeg",
             "/assets/images/car-info/id-6(foton-tunland)/2.jpeg",
@@ -380,7 +391,8 @@
             "no. of doors : 4",
             "No. of Cylinders: 4",
             "Transmission: Manual",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2022"
         ],
         "specs": [
             {
@@ -399,9 +411,10 @@
     },
     {
         "id": 7,
-        "title": "nissan sunny 2018",
+        "title": "nissan sunny ",
         "currency": "omr",
         "price": 3250,
+        "image": "../assets/images/buy-car/images/sunny-2.jpg",
         "images": [
             "/assets/images/car-info/id-7(sunny-2018)km-161515/1.jpg",
             "/assets/images/car-info/id-7(sunny-2018)km-161515/2.jpg",
@@ -414,7 +427,8 @@
             "Kilometers : 161515",
             "color : white",
             "location : muscat",
-            "no. of doors : 4"
+            "no. of doors : 4",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -437,9 +451,10 @@
     },
     {
         "id": 8,
-        "title": "nissan altima 2018",
+        "title": "nissan altima ",
         "currency": "omr",
         "price": 6500,
+        "image": "../assets/images/buy-car/images/altima.jpg",
         "images": [
             "/assets/images/car-info/id-8(altima)/1.jpg",
             "/assets/images/car-info/id-8(altima)/2.jpg",
@@ -455,7 +470,8 @@
             "no. of doors : 4",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -479,9 +495,10 @@
     },
     {
         "id": 9,
-        "title": "nissan x-trail 2018",
+        "title": "nissan x-trail ",
         "currency": "omr",
         "price": 7000,
+        "image": "../assets/images/buy-car/images/x-trail.jpg",
         "images": [
             "/assets/images/car-info/id-9(x-trail)/1.jpeg",
             "/assets/images/car-info/id-9(x-trail)/2.jpeg",
@@ -496,7 +513,8 @@
             "no. of doors : 5",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -523,9 +541,10 @@
     },
     {
         "id": 10,
-        "title": "nissan kicks 2018",
+        "title": "nissan kicks ",
         "currency": "omr",
         "price": 7000,
+        "image": "../assets/images/buy-car/images/kicks.jpg",
         "images": [
             "/assets/images/car-info/id-10(kicks)/1.jpeg",
             "/assets/images/car-info/id-10(kicks)/2.jpeg"
@@ -538,7 +557,8 @@
             "No. of Doors: 4",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2018"
         ],
         "specs": [
             {
@@ -564,9 +584,10 @@
     },
     {
         "id": 11,
-        "title": "CHANGAN CS 95 2022",
+        "title": "CHANGAN CS 95 ",
         "currency": "omr",
         "price": 10500,
+        "image": "../assets/images/buy-car/images/changan cs.jpg",
         "images": [
             "/assets/images/car-info/id-11(changan)/1.jpeg",
             "/assets/images/car-info/id-11(changan)/2.jpeg",
@@ -582,7 +603,8 @@
             "No. of Doors: 5",
             "No. of Cylinders: 4",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2022"
         ],
         "specs": [
             {
@@ -610,9 +632,10 @@
     },
     {
         "id": 12,
-        "title": "nissan patrol 2015",
+        "title": "nissan patrol",
         "currency": "omr",
         "price": 16500,
+        "image": "../assets/images/buy-car/images/nissan-patrol-1.jpg",
         "images": [
             "/assets/images/car-info/id-12(patrol-2015)/1.jpeg",
             "/assets/images/car-info/id-12(patrol-2015)/2.jpeg",
@@ -627,7 +650,8 @@
             "No. of Doors: 5",
             "No. of Cylinders: 8",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2015"
         ],
         "specs": [
             {
@@ -652,9 +676,10 @@
     },
     {
         "id": 13,
-        "title": "nissan patrol 2018",
+        "title": "nissan patrol",
         "currency": "omr",
         "price": 20000,
+        "image": "../assets/images/buy-car/images/nissan-patrol-2.jpg",
         "images": [
            "/assets/images/car-info/id-13(patrol-2018)/1.jpeg",
            "/assets/images/car-info/id-13(patrol-2018)/2.jpeg",
@@ -669,7 +694,8 @@
             "no. of doors : 5",
             "No. of Cylinders: 8",
             "Transmission: Automatic",
-            "Fuel: Petrol"
+            "Fuel: Petrol",
+            "year : 2018i"
         ],
         "specs": [
             {

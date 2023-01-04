@@ -66,25 +66,30 @@
                         };
                         let i = index ">
                         <span class="">
-                            <div class="row buy-car">
-                                <div class="col-lg-5 mt-4 pt-4">
-                                    <!-- <img id="myImg" src="{{post.image}}" alt="" style="width:100%;max-width:600px"> -->
-                                    <div id="myModal" class="modal">
-                                      <span class="close">&times;</span>
-                                      <img class="modal-content" id="img01">
-                                      <div id="caption"></div>
-                                    </div>
-                                    <img class="img" id="myImg" src="{{post.image}}" alt="" srcset="" height="208px" width="390px">
+                            <div class="row buy-car ">
+                                <div class="card">
+                                    <img class="img " id="" src="{{post.image}}" alt="" srcset="" height="208px" width="390px">
+                                    <!-- <div class="carousel">
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner w-100">
+                                                <div *ngFor="let image of item_data.images; let i=index" [ngClass]="(i === 0) ? 'active' : ''" class="carousel-item">
+                                                    <img src="{{image}}" alt="" srcset="" class=" img-top" alt="Card Front" height="208px" width="390px">
+                                                 </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span>
+                                            </a>
+                                          </div>
+                                    </div> -->
+                                    <!-- <img src="../../../../assets/images/finance/ahlibank.jpg" class="img-top" alt="Card Front" height="208px" width="390px"> -->
                                 </div>
-                                <!-- <div class="col-lg-5 mt-4 pt-4">
-                                    <a href=""> <img class="img" src="{{post.image}}" (click)="share()" alt="" srcset=""
-                                            height="208px" width="390px"></a>
-                                </div> -->
+
                                 <div class="col-lg-7 pt-3">
-                                    <!-- <h2>{{post.name}}</h2>
-                                        <span class="row mt-2"><span class="pt-4 mt-2 price">{{post.currency}}</span>
-                                            <h4>{{post.price}}</h4>
-                                        </span> --> 
                                     <div class="row">
                                         <h2>{{post.name}}</h2>
                                         <span class="row mt-2 "><span class="pt-4 mt-2 price">{{post.currency}}</span>
@@ -92,11 +97,14 @@
                                         </span>
                                     </div>
                                     <mat-divider></mat-divider>
-                                    <div class="compare mt-4" *ngFor="let item ">
+                                    <!-- <div class="compare mt-4" *ngFor="let item ">
                                         <mat-checkbox (click)="addtoCompare(item)">add to compare</mat-checkbox>
-                                    </div>
+                                    </div> -->
                                     <div class="compare mt-4">
-                                        <mat-checkbox>add to compare</mat-checkbox>
+                                        <!-- <mat-checkbox data-id="{{post.id}}" name="comapre[]">add to compare</mat-checkbox> -->
+                                        <input type="checkbox" (change)="checkCheckBoxvalue(post.id, $event)"> add to compare<br>
+
+
                                     </div>
                                     <mat-divider></mat-divider>
                                     <div class="row ml-2 ">
@@ -104,9 +112,10 @@
                                         <mat-divider></mat-divider>
                                         <p><i class="fa-solid fa-gauge"></i>{{post.fuel}}</p>
                                         <mat-divider></mat-divider>
-                                        <!-- <p><i class="fa-solid fa-gear"></i>{{post.transmission}}</p> -->
-                                        <p class="ml-4"><img src="../../../../assets/images/icons/transmission.png"
-                                                width="20px" alt="" srcset=""> {{post.transmission}}</p>
+                                        <p class="ml-4">
+                                            <img src="../../../../assets/images/icons/transmission.png" width="20px" alt="" srcset=""> 
+                                            {{post.transmission}}
+                                        </p>
                                         <mat-divider></mat-divider>
                                         <p><i class="fa-solid fa-road"></i>{{post.km}}</p>
                                         <mat-divider></mat-divider>
@@ -117,6 +126,7 @@
                                 </div>
                                 <hr>
                             </div>
+
                         </span>
                     </p>
                 </div>

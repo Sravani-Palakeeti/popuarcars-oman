@@ -2,7 +2,29 @@
     <div class="container-fluid ">
         <div class="container text-center mt-4 pt-4 ">
             <h1>compare cars</h1>
-            <p>No cars added to compare. <a href="/buy-cars">Click here</a> to add cars to the comparision list.</p>
+
+
+            <div *ngIf="Products">
+                <div *ngFor="let item of Products">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{item.image}}" alt="" srcset="">
+                           <div class="text">
+                            <h3>{{item.title}}</h3>
+                            <p *ngFor="let list of item.features">
+                                <mat-divider></mat-divider>
+                                <li>{{list}}</li>
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div *ngIf="Products == 0">
+                <p>No cars added to compare. <a href="/buy-cars">Click here</a> to add cars to the comparision list.</p>
+            </div>
         </div>
     </div>
 </section>

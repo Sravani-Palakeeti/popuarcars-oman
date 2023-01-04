@@ -8,9 +8,10 @@
                         data-interval="3000">
                         <div class="carousel-inner">
                             <div class="carousel-item" *ngFor="let image of images; let i=index" [ngClass]="(i === 0) ? 'active' : ''">
-                                <img src="{{image}}"class="d-block w-100 image-fluid " alt="" srcset="">
+                                <img src="{{image.img}}"class="d-block w-100 image-fluid " alt="" srcset="">
                                 <div class="carousel-caption ">
-                                    <h1>quality vehicle <br> reliable service</h1>
+                                    <h1>{{image.caption1}} <br> <span>{{image.caption2}}</span></h1>
+                                    <!-- <h1>quality vehicle <br> reliable service</h1> -->
                                 </div>
                             </div>
                         </div>

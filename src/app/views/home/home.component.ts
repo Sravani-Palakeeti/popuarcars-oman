@@ -9,9 +9,24 @@ export class HomeComponent implements OnInit {
 
   // slider images
   images = [
-    "../../../assets/images/slider-images/img-8.png",
-    "../../../assets/images/slider-images/img-9.png",
-    "../../../assets/images/slider-images/img-7.png"
+    {
+      // img: "../../../assets/images/slider-images/img-8.png",
+      img: "../../../assets/images/slider-images/img7.png",
+      caption1: "quality vehicle",
+      caption2:"reliable service"
+    },
+    {
+      // img: "../../../assets/images/slider-images/img-9.png",
+      img: "../../../assets/images/slider-images/img6.png",
+      caption1: "find yor ",
+      caption2:"pre owned car"
+    },
+    {
+      // img: "../../../assets/images/slider-images/img-7.png",
+      img: "../../../assets/images/slider-images/img8.png",
+      caption1: "quality vehicle ",
+      caption2:"reliable service"
+    }
   ]
 
   // find car
@@ -77,7 +92,7 @@ export class HomeComponent implements OnInit {
     "sedan",
     "suv"
   ]
-  
+
   // select car section
   selectcarheading = "select a car that suits your budget "
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormControl, Validators } from '@angular/forms';
 import { CarInfoService } from 'src/app/services/car-info/car-info.service';
@@ -14,7 +14,46 @@ export class CarInfoComponent implements OnInit {
   url: any;
   item_data:any;
 
+  shareData: {
+    url: string;
+    description?: string;
+    tags?: string;
+  } = {
+    url: 'http://dev1.sbagh.com/',
+    description: 'development state',
+    tags: 'popular-cars oman',
+  };
+  // shareLinks: { title: string; link: string ; class:string }[] = [
+  shareLinks = [
+    {
+      title: 'fb',
+      image: '../../../../assets/images/icons/social_media_icons/facebook.png',
+      class:'entypo-facebook',
+      link: `https://www.facebook.com/sharer.php?u=${this.shareData?.url}`,
+    },
+    {
+      title: 'twitter',
+      image: '../../../../assets/images/icons/social_media_icons/twitter.png',
+      class:'entypo-twitter',
+      link: `https://twitter.com/intent/tweet?url=${this.shareData?.url}&text=${this.shareData?.description}&hashtags=${this.shareData?.tags}`,
+    },
+    {
+      title: 'whatsapp',
+      image: '../../../../assets/images/icons/social_media_icons/whatsapp.png',
+      class:'entypo-whatsapp',
+      link: `https://wa.me?text=${this.shareData?.url}`,
+    },
+    {
+      title: 'instagram',
+      image: '../../../../assets/images/icons/social_media_icons/instagram.png',
+      class: 'entypo-instagram',
+      link: 'https://www.instagram.com/sharer.php?u=${this.shareData?.url}',
+    },
+  ];
+ 
+
   constructor(private carService: CarInfoService, private route: ActivatedRoute) { }
+
   ngOnInit(): void {
     this.fetchPosts();
   }
